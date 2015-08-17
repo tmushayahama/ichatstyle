@@ -1,0 +1,16 @@
+body{
+	background-color: #080808;
+	color: #FFF;
+}
+
+.im-play-btn {
+	margin-top: 200px;
+	height: 100px;
+	font-size: 3.3em;
+	line-height: 100px;
+}
+#im-display {
+	margin-top: 200px;
+	text-align: center;
+	font-size: 5.0em;
+}
