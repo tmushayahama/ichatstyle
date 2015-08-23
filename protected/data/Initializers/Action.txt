@@ -1,0 +1,5 @@
+id	action	action_type	privacy	status
+1	Be Overly Polite	1	1	1
+2	Be Overly Kind	1	1	1
+3	Forget Each Others Names	1	1	1
+4	You Have Just Met	1	1	1

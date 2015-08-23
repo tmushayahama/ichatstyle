@@ -2,7 +2,7 @@ DROP USER 'ic'@'localhost';
 CREATE USER 'ic'@'localhost' IDENTIFIED BY 'ichat++';
 DROP DATABASE IF EXISTS ichat;
 CREATE DATABASE ichat DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
-GRANT ALL PRIVILEGES ON goalbook.* to 'ic'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON ichat.* to 'ic'@'localhost' WITH GRANT OPTION;
 USE ichat;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -226,3 +226,53 @@ CREATE TABLE `rights` (
   PRIMARY KEY (`itemname`),
   CONSTRAINT `rights_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ------------------Initial Users ------------------
+load data local infile 'C:/xampp/htdocs/ichatstyle/protected/data/Initializers/User.txt'
+    into table ichat.ic_user
+    fields terminated by '\t'
+    enclosed by '"'
+    escaped by '\\'
+    lines terminated by '\r\n'
+    ignore 1 LINES
+    (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`);
+
+-- ------------------Profile ----------------
+load data local infile 'C:/xampp/htdocs/ichatstyle/protected/data/Initializers/Profile.txt'
+    into table ichat.ic_profile
+    fields terminated by '\t'
+    enclosed by '"'
+    escaped by '\\'
+    lines terminated by '\r\n'
+    ignore 1 LINES
+   (`user_id`, `lastname`, `firstname`, `welcome_message`, `summary`, `experience`, `interests`, `favorite_quote`, `avatar_url`, `gender`, `birthdate`, `phone_number`, `address`);
+
+-- ------------------ Action ----------------
+load data local infile 'C:/xampp/htdocs/ichatstyle/protected/data/Initializers/Action.txt'
+    into table ichat.ic_action
+    fields terminated by '\t'
+    enclosed by '"'
+    escaped by '\\'
+    lines terminated by '\r\n'
+    ignore 1 LINES
+  (`id`,	`action`,	`action_type`,	`privacy`,	`status`);
+
+-- ------------------ Chat ----------------
+load data local infile 'C:/xampp/htdocs/ichatstyle/protected/data/Initializers/Chat.txt'
+    into table ichat.ic_chat
+    fields terminated by '\t'
+    enclosed by '"'
+    escaped by '\\'
+    lines terminated by '\r\n'
+    ignore 1 LINES
+   (`id`,	`creator_id`,	`created_date`,	`type_id`,	`chat_youtube_url`,	`title`,	`description`,	`privacy`, `order`,	`status`);
+
+-- ------------------ Action ----------------
+load data local infile 'C:/xampp/htdocs/ichatstyle/protected/data/Initializers/ChatAction.txt'
+    into table ichat.ic_chat_action
+    fields terminated by '\t'
+    enclosed by '"'
+    escaped by '\\'
+    lines terminated by '\r\n'
+    ignore 1 LINES
+  (`id`,	`chat_id`,	`action_id`,	`action_order`,	`action_period`,	`description`,	`privacy`, `order`,	`status`);

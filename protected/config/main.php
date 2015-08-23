@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
   'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-  'name' => 'Skill Section',
+  'name' => 'iChatStyle',
   'defaultController' => 'user/login',
   // preloading 'log' component
   'preload' => array('log'),
@@ -22,9 +22,9 @@ return array(
   'modules' => array(
     // uncomment the following to enable the Gii tool
     'user' => array(
-      'tableUsers' => 'gb_user',
-      'tableProfiles' => 'gb_profile',
-      'tableProfileFields' => 'gb_profiles_field',
+      'tableUsers' => 'ic_user',
+      'tableProfiles' => 'ic_profile',
+      'tableProfileFields' => 'ic_profiles_field',
       # encrypting method (php hash function)
       'hash' => 'md5',
       # send activation email
@@ -91,12 +91,12 @@ return array(
     ),
     // uncomment the following to use a MySQL database
     'db' => array(
-      'connectionString' => 'mysql:host=localhost;dbname=goalbook',
+      'connectionString' => 'mysql:host=localhost;dbname=ichat',
       'emulatePrepare' => true,
       'username' => 'root',
       'password' => '',
       'charset' => 'utf8',
-      'tablePrefix' => 'gb_',
+      'tablePrefix' => 'ic_',
     ),
     'errorHandler' => array(
       // use 'site/error' action to display errors
