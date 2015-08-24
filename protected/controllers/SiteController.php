@@ -20,11 +20,11 @@ class SiteController extends Controller {
   );
  }
 
- public function actionActs() {
+ public function actionNextAction() {
+  $charAction = ChatAction::getNextAction();
   echo CJSON::encode(array(
-    "success" => true,
-    "notify_title" => "Request Sent",
-    "notify_description" => "Your request has been sent",
+    "chatAction" => $charAction,
+    "action" => $charAction->action,
   ));
  }
 

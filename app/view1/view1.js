@@ -13,6 +13,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
           var ImprovConv = function (id) {
            this.id = id;
+           this.action = "fff";
           };
 
           ImprovConv.prototype.sampleStart = function () {
@@ -74,7 +75,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.start = function () {
            $(".im-play-btn").hide();
-           $scope.improvConv.start();
+           $scope.improvConv.startpoo();
           }
 
 
@@ -85,16 +86,21 @@ angular.module('myApp.view1', ['ngRoute'])
 
 
 
-          $scope.acts = $http.post("http://localhost/ichatstyle/site/acts", {}).success(function (data) {
-           console.log("data", data);
-           if (data.error) {
-            self.error = data.error;
-            return typeof error === 'function' && error(data);
-           }
-           typeof success === 'function' && success(data);
-          }).error(function (data) {
-           typeof error === 'function' && error(data);
-          });
+          ImprovConv.prototype.startpoo = function () {
+           var self = this;
 
-          $scope.acts;
+           $http.post("http://localhost/ichatstyle/site/nextAction", {}).success(function (data) {
+            console.log("data", data);
+            console.log("data", data["chatAction"]);
+            self.action = data["action"].action;
+            if (data.error) {
+             self.error = data.error;
+             return typeof error === 'function' && error(data);
+            }
+            typeof success === 'function' && success(data);
+           }).error(function (data) {
+            typeof error === 'function' && error(data);
+           });
+          }
+
          }]);
