@@ -99,14 +99,38 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
            $scope.chats = chats;
-           console.log("poo", chats);
+          }
+
+          $scope.getUsers = function () {
+           var users = [];
+           $http.post("http://localhost/ichatstyle/site/users", {}).success(function (data) {
+            angular.forEach(data["users"], function (value, key) {
+             users.push({
+              id: value.id,
+              firstname: value.firstname,
+              lastname: value.lastname
+             });
+            });
+            if (data.error) {
+             self.error = data.error;
+             return typeof error === 'function' && error(data);
+            }
+            typeof success === 'function' && success(data);
+           }).error(function (data) {
+            typeof error === 'function' && error(data);
+           });
+           $scope.users = users;
           }
 
           $scope.improvConv = new ImprovConv(1);
           $scope.chats = [];
+          $scope.users = [];
           $scope.selectedChat;
           $scope.selectChat = function (index) {
            $scope.selectedChat = $scope.chats[index];
+          }
+          $scope.selectUser = function (index) {
+           $scope.selectedUser = $scope.users[index];
           }
 
           $scope.start = function () {
@@ -121,6 +145,5 @@ angular.module('myApp.view1', ['ngRoute'])
           });
 
           $scope.getChats();
-
-
+          $scope.getUsers();
          }]);

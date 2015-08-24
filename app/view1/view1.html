@@ -1,6 +1,5 @@
 <div class="container">
- {{selectedChat.title}}
- <ul>
+ <ul class="nav nav-tabs">
   <li ng-repeat="chat in chats">
    <a class="btn btn-sm btn-default"
       ng-click="selectChat($index)"
@@ -34,6 +33,14 @@
    </div>
    <div class="modal-body">
     {{selectedChat.title}}
+    <ul class="nav nav-tabs nav-stacked">
+     <li ng-repeat="user in users">
+      <a class="btn btn-sm btn-default"
+         ng-click="selectUser(user)">
+       {{user.firstname + " " + user.lastname}}
+      </a>
+     </li>
+    </ul>
    </div>
    <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

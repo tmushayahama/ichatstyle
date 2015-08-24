@@ -20,6 +20,13 @@ class SiteController extends Controller {
   );
  }
 
+ public function actionUsers() {
+  $users = Profile::getPeople(true);
+  echo CJSON::encode(array(
+    "users" => $users,
+  ));
+ }
+
  public function actionChats() {
   $chats = Chat::getChats();
   echo CJSON::encode(array(
