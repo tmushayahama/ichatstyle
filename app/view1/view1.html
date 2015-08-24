@@ -1,4 +1,9 @@
 <div class="container">
+ <ul>
+  <li ng-repeat="chat in chats">
+   <a ng-click="requestChat(chat)">{{chat.title}}</a>
+  </li>
+ </ul>
  <div class="row text-center">
   <a id="im-samplestart-btn" class="im-play-btn btn btn-default col-lg-offset-3 col-lg-3">
    Sample
@@ -8,7 +13,26 @@
   </a>
  </div>
  <div id="im-display" class="row">
-  ppp
-  {{ improvConv.action}}
+  {{improvConv.action}}
  </div>
 </div>
+<div class="modal animated fadeIn" id="delete">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">
+     <span aria-hidden="true">&times;</span>
+     <span class="sr-only">close</span>
+    </button>
+    <h4 class="modal-title">Play</h4>
+   </div>
+   <div class="modal-body">
+   </div>
+   <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary">Poo</button>
+   </div>
+  </div>
+ </div>
+</div>
+

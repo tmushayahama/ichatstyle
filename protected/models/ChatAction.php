@@ -20,10 +20,31 @@
  */
 class ChatAction extends CActiveRecord {
 
- public static function getNextAction($chat_id = null) {
+ public static function setCanStartStatus($chatId) {
   $chatActionCriteria = new CDbCriteria;
+  $chatActionCriteria->addCondition("chat_id=" . $chatId);
+  $chatAction = ChatAction::Model()->find($chatActionCriteria);
+  $chatAction->status++;
+  return $chatAction->save(false);
+ }
+
+ public static function getCanStartStatus($chatId) {
+  $chatActionCriteria = new CDbCriteria;
+  $chatActionCriteria->addCondition("chat_id=" . $chatId);
+  return ChatAction::Model()->find($chatActionCriteria)->status;
+ }
+
+ public static function getNextAction($chatId = null) {
+  $chatActionCriteria = new CDbCriteria;
+  $chatActionCriteria->addCondition("chat_id=" . $chatId);
   $chatActionCriteria->order = 'RAND()';
   return ChatAction::Model()->find($chatActionCriteria);
+ }
+
+ public static function getAllActions($chatId = null) {
+  $chatActionCriteria = new CDbCriteria;
+  $chatActionCriteria->addCondition("chat_id=" . $chatId);
+  return ChatAction::Model()->findAll($chatActionCriteria);
  }
 
  /**
