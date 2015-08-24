@@ -104,6 +104,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.improvConv = new ImprovConv(1);
           $scope.chats = [];
+          $scope.selectedChat;
+          $scope.selectChat = function (index) {
+           $scope.selectedChat = $scope.chats[index];
+          }
 
           $scope.start = function () {
            $(".im-play-btn").hide();

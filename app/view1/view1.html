@@ -1,7 +1,13 @@
 <div class="container">
+ {{selectedChat.title}}
  <ul>
   <li ng-repeat="chat in chats">
-   <a ng-click="requestChat(chat)">{{chat.title}}</a>
+   <a class="btn btn-sm btn-default"
+      ng-click="selectChat($index)"
+      data-toggle="modal"
+      data-target="#open-chat">
+    {{chat.title}}
+   </a>
   </li>
  </ul>
  <div class="row text-center">
@@ -16,7 +22,7 @@
   {{improvConv.action}}
  </div>
 </div>
-<div class="modal animated fadeIn" id="delete">
+<div class="modal" id="open-chat">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -27,6 +33,7 @@
     <h4 class="modal-title">Play</h4>
    </div>
    <div class="modal-body">
+    {{selectedChat.title}}
    </div>
    <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -35,4 +42,3 @@
   </div>
  </div>
 </div>
-
