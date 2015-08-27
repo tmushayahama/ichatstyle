@@ -1,16 +1,9 @@
 <div class="container">
- <ul class="nav nav-tabs">
-  <li ng-repeat="chat in chats">
-   <a class="btn btn-sm btn-default"
-      ng-click="selectChat($index)"
-      data-toggle="modal"
-      data-target="#open-chat">
-    {{chat.title}}
-   </a>
-  </li>
- </ul>
  <div class="row text-center">
-  <a id="im-samplestart-btn" class="im-play-btn btn btn-default col-lg-offset-3 col-lg-3">
+  <a id="im-samplestart-btn"
+     data-toggle="modal"
+     data-target="#open-chat"
+     class="im-play-btn btn btn-default col-lg-offset-3 col-lg-3">
    Sample
   </a>
   <a ng-click="start()" class="im-play-btn btn btn-warning col-lg-3">
@@ -32,15 +25,38 @@
     <h4 class="modal-title">Play</h4>
    </div>
    <div class="modal-body">
+    <i class="fa fa-chevron-left"
+       ng-click="wizardPrevious()"></i>
+    <i class="fa fa-chevron-right"
+       ng-click="wizardNext()"></i>
     {{selectedChat.title}}
-    <ul class="nav nav-tabs nav-stacked">
-     <li ng-repeat="user in users">
-      <a class="btn btn-sm btn-default"
-         ng-click="selectUser(user)">
-       {{user.firstname + " " + user.lastname}}
-      </a>
-     </li>
-    </ul>
+    <ng-switch on="wizardStep">
+     <div ng-switch-when="0">
+      <ul class="nav nav-tabs">
+       <li ng-repeat="chat in chats">
+        <a class="btn btn-sm btn-default"
+           ng-click="selectChat($index)">
+         {{chat.title}}
+        </a>
+       </li>
+      </ul>
+     </div>
+     <span ng-switch-when="1">One</span>
+     <div ng-switch-default>
+      <ul class="list-group">
+       <li ng-repeat="user in users" class="list-group-item">
+        <a class="btn btn-link"
+           ng-click="selectUser(user)">
+         {{user.firstname + " " + user.lastname}}
+        </a>
+        <a class="btn btn-xs btn-primary pull-right"
+           ng-click="requestChat(user)">
+         Request
+        </a>
+       </li>
+      </ul>
+     </div>
+    </ng-switch>
    </div>
    <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -15,12 +15,38 @@
  */
 class ChatAssignment extends CActiveRecord {
 
+ public static function RequestChat($userId, $chatId) {
+  $chatActionCriteria = new CDbCriteria;
+  $chatActionCriteria->addCondition("chat_id=" . $chatId);
+  $chatActions = ChatAction::Model()->findAll($chatActionCriteria);
+
+  $chat = new CHat();
+  $chat->type_id = 2;
+  $chat->description = "poo";
+  $chat->creator_id = Yii::app()->user->id;
+  if ($chat->save(false)) {
+   $this->copyChat($chatId, $originalChatActions);
+   $chatAssignment = new ChatAssignment();
+   $chatAssignment->chat_id = $chatId;
+   $chatAssignment->assignee_id = $userId;
+   return $chatAssignment->save(false);
+  }
+ }
+
  public static function CanStart($chatId) {
   $chatActionCriteria = new CDbCriteria;
   $chatActionCriteria->addCondition("chat_id=" . $chatId);
   $chatAction = ChatAction::Model()->find($chatActionCriteria);
   $chatAction->status++;
   return $chatAction->save(false);
+ }
+
+ private static function copyChat($chatId, $originalChatActions) {
+  foreach ($originalChatActions as $originalChatAction) {
+   $chatAction = new ChatAction();
+   $chatAction->action_id = $originalChatAction->action_if;
+   $chatAction->save(false);
+  }
  }
 
  /**

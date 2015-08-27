@@ -10,7 +10,7 @@ class SiteController extends Controller {
 // captcha action renders the CAPTCHA image displayed on the contact page
     'captcha' => array(
       'class' => 'CCaptchaAction',
-      'backColor' => 0xFFFFFF,
+      'basedackColor' => 0xFFFFFF,
     ),
     // page action renders "static" pages stored under 'protected/views/site/pages'
 // They can be accessed via: index.php?r=site/page&view=FileName
@@ -31,6 +31,15 @@ class SiteController extends Controller {
   $chats = Chat::getChats();
   echo CJSON::encode(array(
     "chats" => $chats,
+  ));
+ }
+
+ public function actionRequestChat() {
+  $chatId = Yii::app()->request->getParam('chat_id');
+  $userId = Yii::app()->request->getParam('user_id');
+  $requested = ChatAssignment::RequestChat($userId, $chatId);
+  echo CJSON::encode(array(
+    "success" => $requested,
   ));
  }
 
