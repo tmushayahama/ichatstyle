@@ -12,46 +12,44 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link href="css/lib/bootstrap.min.css" rel="stylesheet">
-		<link href="css/lib/font-awesome.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
  </head>
  <body>
-
   <div id="ic-navbar" class="navbar navbar-static-top">
    <div class="container ic-padding-none">
     <div class="row">
-     <div class="navbar-header col-lg-9 col-md-9 col-sm-7 col-xs-9">
-      <a class="ic-logo ic-no-margin">
-       <strong>ICHAT</strong>SECTION<small>BETA</small>
+     <div class="col-lg-2 col-md-2 col-sm-5 col-xs-3 ic-padding-none">
+
+     </div>
+     <div class="navbar-header col-lg-8 col-md-8 col-sm-7 col-xs-9">
+      <a class="ic-logo">
+       <strong>iCHAT</strong>SECTION<small>BETA</small>
       </a>
      </div>
-     <div class="col-lg-3 col-md-3 col-sm-5 col-xs-3 ic-padding-none">
+     <div class="col-lg-2 col-md-2 col-sm-5 col-xs-3 ic-padding-none">
       <div id="ic-navbar-nav" class="row">
        <a href="#ic-registration-modal"
           class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ic-padding-none"
           data-toggle="modal">
-        <h3 class='fa fa-key'></h3>
-        <span class='hidden-xs'> Beta Access</span>
+        <h3 class='fa fa-lock'></h3>
        </a>
        <a href="#ic-login-modal"
           class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ic-padding-none"
           data-toggle="modal">
         <h3 class='fa fa-sign-in'></h3>
-        <span class='hidden-xs'> Log In</span>
        </a>
       </div>
      </div>
     </div>
    </div>
   </div>
-
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
   <div ng-view></div>
 
   <script src="bower_components/angular/angular.js"></script>

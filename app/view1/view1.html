@@ -25,15 +25,25 @@
     <h4 class="modal-title">Play</h4>
    </div>
    <div class="modal-body">
-    <i class="fa fa-chevron-left"
-       ng-click="wizardPrevious()"></i>
-    <i class="fa fa-chevron-right"
-       ng-click="wizardNext()"></i>
-    {{selectedChat.title}}
+    <div class="row ic-heading-row">
+     <div class="text-center col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <i class="fa fa-2x fa-chevron-left"
+         ng-click="wizardPrevious()">
+      </i>
+     </div>
+     <div class="text-center col-lg-8 col-md-8 col-sm-8 col-xs-8">
+      {{selectedChat.title}}
+     </div>
+     <div class="text-center col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <i class="fa fa-2x fa-chevron-right"
+         ng-click="wizardNext()">
+      </i>
+     </div>
+    </div>
     <ng-switch on="wizardStep">
      <div ng-switch-when="0">
-      <ul class="nav nav-tabs">
-       <li ng-repeat="chat in chats">
+      <ul class="list-group">
+       <li ng-repeat="chat in chats" class="list-group-item">
         <a class="btn btn-sm btn-default"
            ng-click="selectChat($index)">
          {{chat.title}}
@@ -41,8 +51,7 @@
        </li>
       </ul>
      </div>
-     <span ng-switch-when="1">One</span>
-     <div ng-switch-default>
+     <div ng-switch-when="1">
       <ul class="list-group">
        <li ng-repeat="user in users" class="list-group-item">
         <a class="btn btn-link"
