@@ -71,13 +71,27 @@ a.btn-link:hover {
  bottom: 0px;
  left: 0px;
 }
+.ic-modal-lg .modal-header {
+ position: absolute;
+ height: 70px;
+ top: 0px;
+ right: 0px;
+ left: 0px;
+}
+.ic-modal-lg .modal-body {
+ position: absolute;
+ padding: 15px;
+ top: 71px;
+ right: 0px;
+ bottom: 51px;
+ left: 0px;
+}
 .ic-modal-lg .modal-footer {
  right: 0px;
  bottom: 0px;
  left: 0px;
  height: 50px;
 }
-
 .ic-modal-lg .modal-dialog {
  margin: 0;
 }
@@ -105,8 +119,13 @@ a.btn-link:hover {
  font-size: 0.6em;
  color:#FF3333;
 }
-
-#ic-display {
+.ic-display-table {
+ display: table;
+ height: 100%;
+ width: 100%;
+}
+.ic-display-cell {
+ display:table-cell;
 	text-align: center;
  vertical-align: middle;
 	font-size: 5.0em;

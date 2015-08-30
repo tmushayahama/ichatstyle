@@ -12,19 +12,20 @@ angular.module('myApp.view1', ['ngRoute'])
           var ImprovConv = function (id) {
            this.id = id;
            this.action = "";
-           this.currentAction = [];
+           this.acts = [
+            {description: "Warm Up"}
+           ]
+           this.currentIndex = 0;
+           this.currentAct = this.acts[this.currentIndex];
           };
 
           ImprovConv.prototype.quickPlay = function () {
            console.log("I am a quick play");
            var self = this;
-           var acts = [
-            {id: 0},
-            {description: "Warm Up"}
-           ];
            $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
+            self.acts = [];
             angular.forEach(data["results"], function (value, key) {
-             acts.push({description: value["action"].action});
+             self.acts.push({description: value["action"].action});
             });
             if (data.error) {
              self.error = data.error;
@@ -39,10 +40,15 @@ angular.module('myApp.view1', ['ngRoute'])
             if (count === 0) {
              var rand = Math.round(Math.random() * (8000 - 3000)) + 3000;
              setTimeout(myFunction, rand);
-            } else if (count < acts.length) {
-             $scope.improvConv.currentAction = acts[count];
+            } else if (count < self.acts.length) {
+             self.currentIndex = count;
+             $scope.$apply(function ()
+             {
+              self.currentAct = self.acts[self.currentIndex];
+             });
+
              var rand = Math.round(Math.random() * (10000 - 5000)) + 5000;
-             console.log(rand);
+             console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
              var snd = new Audio("sound/sound1.wav");
              snd.play();
              setTimeout(myFunction, rand);

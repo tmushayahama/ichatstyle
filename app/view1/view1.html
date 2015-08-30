@@ -1,5 +1,6 @@
 <div class="gb-home-header-1 row text-center">
  <div class="container">
+
   <a data-toggle="modal"
      data-target="#quick-play"
      ng-click="quickPlay()"
@@ -26,8 +27,10 @@
     </h2>
    </div>
    <div class="modal-body">
-    <div id="ic-display" class="row">
-     {{improvConv.currentAction.description}}
+    <div class="ic-display-table">
+     <div class="ic-display-cell">
+      {{improvConv.currentAct.description}}
+     </div>
     </div>
    </div>
    <div class="modal-footer">
