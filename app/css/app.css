@@ -16,6 +16,12 @@ a.btn-link:hover {
  color:#016875;
 }
 
+.ic-center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
 .ic-play-btn {
  opacity: 0.7;
 	margin-top: 200px;
@@ -86,18 +92,23 @@ a.btn-link:hover {
  box-shadow: inherit;
 }
 
+.modal-header{
+ padding:10px;
+ background-color: #FFF;
+ border-bottom: #0298AB solid 4px;
+ font-size: 2.0em;
+}
 
-
-
-
-
-
-
-
+.modal-header button{
+ margin-top: 5px;
+ font-weight: bold;
+ font-size: 0.6em;
+ color:#FF3333;
+}
 
 #ic-display {
-	margin-top: 200px;
 	text-align: center;
+ vertical-align: middle;
 	font-size: 5.0em;
 }
 

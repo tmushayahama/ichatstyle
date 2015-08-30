@@ -21,20 +21,24 @@
      <span aria-hidden="true">&times;</span>
      <span class="sr-only">close</span>
     </button>
-    <h4 class="modal-title">Quick Play</h4>
+    <h2 class="modal-title text-center">
+     Quick Play
+    </h2>
    </div>
    <div class="modal-body">
     <div id="ic-display" class="row">
-     {{improvConv.currentAction.Description}}
+     {{improvConv.currentAction.description}}
     </div>
    </div>
    <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">End</button>
+    <div class="btn-group col-lg-offset-5 col-lg-2">
+     <button type="button" class="btn btn-default col-lg-6" data-dismiss="modal">Restart</button>
+     <button type="button" class="btn btn-danger col-lg-6" data-dismiss="modal">End</button>
+    </div>
    </div>
   </div>
  </div>
 </div>
-
 <div class="modal" id="open-chat">
  <div class="modal-dialog">
   <div class="modal-content">
@@ -43,7 +47,9 @@
      <span aria-hidden="true">&times;</span>
      <span class="sr-only">close</span>
     </button>
-    <h4 class="modal-title">Play</h4>
+    <h2 class="modal-title">
+     Play
+    </h2>
    </div>
    <div class="modal-body">
     <div class="ic-scrollable row">

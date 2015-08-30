@@ -12,7 +12,7 @@ angular.module('myApp.view1', ['ngRoute'])
           var ImprovConv = function (id) {
            this.id = id;
            this.action = "";
-           this.currentAction = "";
+           this.currentAction = [];
           };
 
           ImprovConv.prototype.quickPlay = function () {
@@ -24,7 +24,7 @@ angular.module('myApp.view1', ['ngRoute'])
            ];
            $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
             angular.forEach(data["results"], function (value, key) {
-             acts.push({Description: value["action"].action});
+             acts.push({description: value["action"].action});
             });
             if (data.error) {
              self.error = data.error;
@@ -37,13 +37,13 @@ angular.module('myApp.view1', ['ngRoute'])
            var count = 0;
            var myFunction = function () {
             if (count === 0) {
-             var rand = Math.round(Math.random() * (12000 - 5000)) + 5000;
+             var rand = Math.round(Math.random() * (8000 - 3000)) + 3000;
              setTimeout(myFunction, rand);
             } else if (count < acts.length) {
              $scope.improvConv.currentAction = acts[count];
-             var rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
+             var rand = Math.round(Math.random() * (10000 - 5000)) + 5000;
              console.log(rand);
-             var snd = new Audio("assets/sounds/sound1.wav");
+             var snd = new Audio("sound/sound1.wav");
              snd.play();
              setTimeout(myFunction, rand);
             }
@@ -61,7 +61,7 @@ angular.module('myApp.view1', ['ngRoute'])
            ];
            $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
             angular.forEach(data["results"], function (value, key) {
-             acts.push({Description: value["action"].action});
+             acts.push({description: value["action"].action});
             });
             if (data.error) {
              self.error = data.error;
@@ -82,7 +82,7 @@ angular.module('myApp.view1', ['ngRoute'])
              display.text(acts[count].Description);
              var rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
              console.log(rand);
-             var snd = new Audio("assets/sounds/sound1.wav");
+             var snd = new Audio("../sounds/sound1.wav");
              snd.play();
              setTimeout(myFunction, rand);
             }

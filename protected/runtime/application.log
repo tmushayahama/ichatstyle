@@ -4068,3 +4068,2550 @@ Stack trace:
 REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
 HTTP_REFERER=http://localhost/ichatstyle/app/index.html
 ---
+2015/08/30 02:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 02:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:45:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:46:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 02:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:49:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 02:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:59:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 02:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:59:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 02:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:01:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 03:01:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:05:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:08:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 03:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 03:09:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:10:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 03:20:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 03:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:21:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:21:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:22:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 03:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:50:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:51:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:52:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:52:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:53:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:54:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:55:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:56:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:57:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:57:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:58:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:59:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 04:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:00:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:05:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:06:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:09:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:09:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:10:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:10:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:12:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:13:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:14:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:14:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:14:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:14:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:16:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:17:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:18:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:19:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:21:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:21:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:25:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:25:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:27:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:27:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:27:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:28:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:28:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:28:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:29:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:30:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:31:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:32:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:33:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:37:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:37:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:38:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:38:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/assets/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/assets/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/assets/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:48:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:48:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('sounds/sound1.w...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/30 05:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:51:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/sounds/sound1.wav".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/sounds/soun...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/sounds/sound1.wav
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/08/30 05:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
