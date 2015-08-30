@@ -1,19 +1,40 @@
-<div class="container">
- <div class="row text-center">
-  <a id="im-samplestart-btn"
-     data-toggle="modal"
+<div class="gb-home-header-1 row text-center">
+ <div class="container">
+  <a data-toggle="modal"
+     data-target="#quick-play"
+     ng-click="quickPlay()"
+     class="ic-play-btn btn col-lg-offset-2 col-lg-4">
+   Quick Chat
+  </a>
+  <a data-toggle="modal"
      data-target="#open-chat"
-     class="im-play-btn btn btn-default col-lg-offset-3 col-lg-3">
-   Sample
+     class="ic-play-btn btn col-lg-4">
+   Request Chat
   </a>
-  <a ng-click="start()" class="im-play-btn btn btn-warning col-lg-3">
-   Start
-  </a>
- </div>
- <div id="im-display" class="row">
-  {{improvConv.action}}
  </div>
 </div>
+<div class="modal ic-modal-lg" id="quick-play">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">
+     <span aria-hidden="true">&times;</span>
+     <span class="sr-only">close</span>
+    </button>
+    <h4 class="modal-title">Quick Play</h4>
+   </div>
+   <div class="modal-body">
+    <div id="ic-display" class="row">
+     {{improvConv.currentAction.Description}}
+    </div>
+   </div>
+   <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">End</button>
+   </div>
+  </div>
+ </div>
+</div>
+
 <div class="modal" id="open-chat">
  <div class="modal-dialog">
   <div class="modal-content">
@@ -25,47 +46,37 @@
     <h4 class="modal-title">Play</h4>
    </div>
    <div class="modal-body">
-    <div class="row ic-heading-row">
-     <div class="text-center col-lg-2 col-md-2 col-sm-2 col-xs-2">
-      <i class="fa fa-2x fa-chevron-left"
-         ng-click="wizardPrevious()">
-      </i>
-     </div>
-     <div class="text-center col-lg-8 col-md-8 col-sm-8 col-xs-8">
-      {{selectedChat.title}}
-     </div>
-     <div class="text-center col-lg-2 col-md-2 col-sm-2 col-xs-2">
-      <i class="fa fa-2x fa-chevron-right"
-         ng-click="wizardNext()">
-      </i>
-     </div>
+    <div class="ic-scrollable row">
+     <ng-switch on="wizardStep">
+      <div ng-switch-when="0">
+       <ul class="list-group">
+        <li ng-repeat="chat in chats" class="list-group-item">
+         <a class="ic-chat-row col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            ng-click="selectChat($index)">
+          {{chat.title}}
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div ng-switch-when="1">
+       <div class="row ic-selected-heading">
+        <h4>{{selectedChat.title}}</h4>
+       </div>
+       <ul class="list-group">
+        <li ng-repeat="user in users" class="list-group-item">
+         <a class="btn btn-link"
+            ng-click="selectUser(user)">
+          {{user.firstname + " " + user.lastname}}
+         </a>
+         <a class="btn btn-xs btn-primary pull-right"
+            ng-click="requestChat(user)">
+          Request
+         </a>
+        </li>
+       </ul>
+      </div>
+     </ng-switch>
     </div>
-    <ng-switch on="wizardStep">
-     <div ng-switch-when="0">
-      <ul class="list-group">
-       <li ng-repeat="chat in chats" class="list-group-item">
-        <a class="btn btn-sm btn-default"
-           ng-click="selectChat($index)">
-         {{chat.title}}
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div ng-switch-when="1">
-      <ul class="list-group">
-       <li ng-repeat="user in users" class="list-group-item">
-        <a class="btn btn-link"
-           ng-click="selectUser(user)">
-         {{user.firstname + " " + user.lastname}}
-        </a>
-        <a class="btn btn-xs btn-primary pull-right"
-           ng-click="requestChat(user)">
-         Request
-        </a>
-       </li>
-      </ul>
-     </div>
-    </ng-switch>
    </div>
    <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

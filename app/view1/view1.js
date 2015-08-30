@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('myApp.view1', ['ngRoute'])
-
         .config(['$routeProvider', function ($routeProvider) {
           $routeProvider.when('/view1', {
            templateUrl: 'view1/view1.html',
@@ -10,27 +9,39 @@ angular.module('myApp.view1', ['ngRoute'])
          }])
 
         .controller('View1Ctrl', ['$scope', "$http", function ($scope, $http) {
-
           var ImprovConv = function (id) {
            this.id = id;
            this.action = "";
+           this.currentAction = "";
           };
-          ImprovConv.prototype.sampleStart = function () {
-           console.log("I am a sample");
-           var act = [
-            {Description: ""},
-            {Description: ""}
+
+          ImprovConv.prototype.quickPlay = function () {
+           console.log("I am a quick play");
+           var self = this;
+           var acts = [
+            {id: 0},
+            {description: "Warm Up"}
            ];
+           $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
+            angular.forEach(data["results"], function (value, key) {
+             acts.push({Description: value["action"].action});
+            });
+            if (data.error) {
+             self.error = data.error;
+             return typeof error === 'function' && error(data);
+            }
+            typeof success === 'function' && success(data);
+           }).error(function (data) {
+            typeof error === 'function' && error(data);
+           });
            var count = 0;
-           var display = $("#im-display");
-           display.fadeIn("1000");
            var myFunction = function () {
             if (count === 0) {
-             var rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+             var rand = Math.round(Math.random() * (12000 - 5000)) + 5000;
              setTimeout(myFunction, rand);
-            } else if (count < act.length) {
-             display.text(act[count].Description);
-             var rand = Math.round(Math.random() * (12000 - 6000)) + 6000;
+            } else if (count < acts.length) {
+             $scope.improvConv.currentAction = acts[count];
+             var rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
              console.log(rand);
              var snd = new Audio("assets/sounds/sound1.wav");
              snd.play();
@@ -40,6 +51,7 @@ angular.module('myApp.view1', ['ngRoute'])
            };
            myFunction();
           };
+
           ImprovConv.prototype.start = function () {
            console.log("I am being start");
            var self = this;
@@ -61,7 +73,7 @@ angular.module('myApp.view1', ['ngRoute'])
            });
            var count = 0;
            var myFunction = function () {
-            var display = $("#im-display");
+            var display = $("#ic-display");
             display.fadeIn("1000");
             if (count === 0) {
              var rand = Math.round(Math.random() * (12000 - 5000)) + 5000;
@@ -165,15 +177,16 @@ angular.module('myApp.view1', ['ngRoute'])
            $scope.selectedUser = $scope.users[index];
           }
 
+          $scope.quickPlay = function () {
+           $scope.improvConv.quickPlay();
+          }
+
           $scope.start = function () {
-           $(".im-play-btn").hide();
            $scope.improvConv.start();
           }
 
-
-          $("body").on("click", "#im-samplestart-btn", function (e) {
-           $(".im-play-btn").hide();
-           $scope.improvConv.sampleStart();
+          $("body").on("click", "#ic-samplestart-btn", function (e) {
+           $scope.improvConv.quickPlay();
           });
           $scope.getChats();
           $scope.getUsers();
