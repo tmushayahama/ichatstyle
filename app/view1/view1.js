@@ -13,10 +13,36 @@ angular.module('myApp.view1', ['ngRoute'])
            this.id = id;
            this.action = "";
            this.acts = [
-            {description: "Warm Up"}
+            {description: "Ready..."}
            ];
            this.currentIndex = 0;
            this.currentAct = this.acts[this.currentIndex];
+          };
+
+          ImprovConv.prototype.spitActions = function () {
+           var self = this;
+           var count = 0;
+           var spitAction = function () {
+            if (count === 0) {
+             var rand = Math.round(Math.random() * (8000 - 3000)) + 3000;
+             self.quickPlayTimer = setTimeout(spitAction, rand);
+            } else if (count < self.acts.length) {
+             self.currentIndex = count;
+             setTimeout(function () {
+              $scope.$apply(function ()
+              {
+               self.currentAct = self.acts[self.currentIndex];
+              });
+             });
+             var rand = Math.round(Math.random() * (10000 - 5000)) + 5000;
+             console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
+             var snd = new Audio("sound/sound1.wav");
+             snd.play();
+             self.quickPlayTimer = setTimeout(spitAction, rand);
+            }
+            count++;
+           };
+           spitAction();
           };
 
           ImprovConv.prototype.quickPlay = function () {
@@ -27,6 +53,7 @@ angular.module('myApp.view1', ['ngRoute'])
             angular.forEach(data["results"], function (value, key) {
              self.acts.push({description: value["action"].action});
             });
+            self.spitActions();
             if (data.error) {
              self.error = data.error;
              return typeof error === 'function' && error(data);
@@ -35,27 +62,34 @@ angular.module('myApp.view1', ['ngRoute'])
            }).error(function (data) {
             typeof error === 'function' && error(data);
            });
-           var count = 0;
-           var myFunction = function () {
-            if (count === 0) {
-             var rand = Math.round(Math.random() * (8000 - 3000)) + 3000;
-             setTimeout(myFunction, rand);
-            } else if (count < self.acts.length) {
-             self.currentIndex = count;
-             $scope.$apply(function ()
-             {
-              self.currentAct = self.acts[self.currentIndex];
-             });
+          };
 
-             var rand = Math.round(Math.random() * (10000 - 5000)) + 5000;
-             console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
-             var snd = new Audio("sound/sound1.wav");
-             snd.play();
-             setTimeout(myFunction, rand);
-            }
-            count++;
-           };
-           myFunction();
+          ImprovConv.prototype.restartQuickPlay = function () {
+           var self = this;
+           clearTimeout(self.quickPlayTimer);
+           self.currentIndex = 0;
+           setTimeout(function () {
+            $scope.$apply(function ()
+            {
+             self.currentAct = self.acts[self.currentIndex];
+            });
+           });
+           self.spitActions();
+          };
+
+          ImprovConv.prototype.endQuickPlay = function () {
+           var self = this;
+           clearTimeout(self.quickPlayTimer);
+           self.currentIndex = 0;
+           self.acts = [
+            {description: "Ready..."}
+           ];
+           setTimeout(function () {
+            $scope.$apply(function ()
+            {
+             self.currentAct = self.acts[self.currentIndex];
+            });
+           });
           };
 
           ImprovConv.prototype.start = function () {
@@ -78,23 +112,23 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
            var count = 0;
-           var myFunction = function () {
+           var spitAction = function () {
             var display = $("#ic-display");
             display.fadeIn("1000");
             if (count === 0) {
              var rand = Math.round(Math.random() * (12000 - 5000)) + 5000;
-             setTimeout(myFunction, rand);
+             setTimeout(spitAction, rand);
             } else if (count < acts.length) {
              display.text(acts[count].Description);
              var rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
              console.log(rand);
              var snd = new Audio("../sounds/sound1.wav");
              snd.play();
-             setTimeout(myFunction, rand);
+             setTimeout(spitAction, rand);
             }
             count++;
            };
-           myFunction();
+           spitAction();
           };
           $scope.getChats = function () {
            var chats = [];

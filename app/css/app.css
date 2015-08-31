@@ -1,15 +1,22 @@
 body{
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- overflow: hidden;
  background-color: #5A8F95;
  background-image: url(../img/background_1.png);
 }
 
-
+a {
+ cursor:pointer;
+ word-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6 {
+ margin: 0 0 0 0;
+ padding:0 0 0 0;
+ font-weight: bold;
+}
+p {
+ margin: 0 0 0 0;
+ padding:0 0 0 0;
+ word-wrap: break-word;
+}
 a,
 a.btn-link {
  color: #0298AB;
@@ -41,9 +48,13 @@ a.btn-link:hover {
  margin-left: auto;
  margin-right: auto;
 }
+.ic-play-btn-row {
+	margin-top: 50px;
+ margin-bottom: 500px;
+}
 
 .ic-play-btn {
-	margin-top: 50px;
+ margin-bottom: 10px;
 	height: 80px;
 	font-size: 1.8em;
 	line-height: 60px;
@@ -117,7 +128,7 @@ a.btn-link:hover {
  top: 50px;
  right: 50px;
  bottom: 50px;
- left: 52px;
+ left: 50px;
 }
 .ic-modal-lg .modal-content {
  top: 0px;
@@ -212,7 +223,7 @@ a.btn-link:hover {
  cursor: pointer!important;
 }
 .navbar-header {
- padding-top: 15px;
+ padding-top: 5px;
  text-align: center;
 }
 
@@ -275,4 +286,18 @@ a.btn-link:hover {
 }
 .ic-padding-thickest {
  padding: 25px!important;
+}
+@media (max-width: 960px) {
+ .ic-modal-lg .modal-dialog {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+ }
+}
+@media (max-width: 768px) {
+ #ic-navbar {
+  width:100%;
+  position:relative!important;
+ }
 }
