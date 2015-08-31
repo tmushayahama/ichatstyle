@@ -3,3 +3,10 @@ id	action	action_type	privacy	status
 2	Be Overly Kind	1	1	1
 3	Forget Each Others Names	1	1	1
 4	You Have Just Met	1	1	1
+5	Annoying Mathmatician	1	1	1
+6	Annoyingly Philosophical	1	1	1
+7	Don't answer question 	1	1	1
+8	Less Confidence 	1	1	1
+9	You don't know what a plane is.	1	1	1
+10	Confuse a pilot with a driver	1	1	1
+11	Be nosy	1	1	1

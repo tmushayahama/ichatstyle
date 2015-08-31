@@ -7255,3 +7255,133 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
 ---
+2015/08/31 11:57:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 11:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:16:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:36:03 [error] [php] Creating default object from empty value (C:\xampp\htdocs\ichatstyle\protected\models\Action.php:20)
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\ichatstyle\index.php(13): CWebApplication->run()
+REQUEST_URI=/ichatstyle/site/allActions
+in C:\xampp\htdocs\ichatstyle\protected\models\Action.php (20)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (61)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/08/31 12:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:36:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/08/31 12:36:24 [error] [php] Creating default object from empty value (C:\xampp\htdocs\ichatstyle\protected\models\Action.php:20)
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\ichatstyle\index.php(13): CWebApplication->run()
+REQUEST_URI=/ichatstyle/site/allActions
+in C:\xampp\htdocs\ichatstyle\protected\models\Action.php (20)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (61)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/08/31 12:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---

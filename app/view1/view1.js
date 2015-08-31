@@ -51,7 +51,7 @@ angular.module('myApp.view1', ['ngRoute'])
            $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
             self.acts = [];
             angular.forEach(data["results"], function (value, key) {
-             self.acts.push({description: value["action"].action});
+             self.acts.push({description: value.action});
             });
             self.spitActions();
             if (data.error) {

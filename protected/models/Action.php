@@ -15,6 +15,13 @@
  */
 class Action extends CActiveRecord {
 
+ public static function getRandomActions() {
+  $actionCriteria = new CDbCriteria;
+  $actionCriteria->order = 'RAND()';
+  $actionCriteria->limit = 6;
+  return Action::Model()->findAll($actionCriteria);
+ }
+
  /**
   * Returns the static model of the specified AR class.
   * @param string $className active record class name.

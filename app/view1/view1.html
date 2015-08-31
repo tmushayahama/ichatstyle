@@ -43,7 +43,7 @@
      <span class="sr-only">close</span>
     </button>
     <h2 class="modal-title text-center">
-     Quick Play
+     Quick Chat Play
     </h2>
    </div>
    <div class="modal-body">
@@ -80,19 +80,25 @@
      <span class="sr-only">close</span>
     </button>
     <h2 class="modal-title text-center">
-     Play
+     Request Chat Play
     </h2>
    </div>
-   <div class="modal-body ic-scrollable">
-    <div class="ic-wizard-menu col-lg-3 col-md-3 col-sm-4 col-xs-12">
-
-    </div>
+   <div class="modal-body">
     <div class="ic-wizard-menu col-lg-4 col-md-4 col-sm-4 col-xs-12">
+     <div class="ic-wizard-menu-box">
+      <div class="ic-title">
+       <i ng-show="false" class="text-success fa fa-check"></i> Select a Chat
+      </div>
+      <div class="ic-description">
+       For fun purposes, you cannot create a chat by yourself. Someone should create it for
+       you.
+      </div>
+     </div>
     </div>
     <ng-switch on="wizardStep" class="ic-wizard-content col-lg-8 col-md-8 col-sm-8 col-xs-12">
      <div ng-switch-when="0">
       <div ng-repeat="chat in chats"
-           class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+           class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
        <div ng-click="selectChat($index)" class="ic-box-1">
         <div class="ic-title">
          {{chat.title}}
@@ -128,5 +134,4 @@
    <button type="submit" class="btn btn-primary">Poo</button>
   </div>
  </div>
-</div>
 </div>

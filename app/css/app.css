@@ -145,7 +145,8 @@ a.btn-link:hover {
 }
 .ic-modal-lg .modal-body {
  position: absolute;
- padding: 15px;
+ overflow: hidden;
+ padding: 0px;
  top: 71px;
  right: 0px;
  bottom: 51px;
@@ -287,6 +288,31 @@ a.btn-link:hover {
 .ic-padding-thickest {
  padding: 25px!important;
 }
+.ic-wizard-menu {
+ padding: 0;
+ height: 100%;
+ background-color: #E2E2E2;
+}
+.ic-wizard-menu-box {
+ padding: 10px;
+ width: 100%;
+ border-bottom: #999 solid 1px;
+}
+.ic-wizard-menu-box .ic-title {
+ font-size: 1.4em;
+ font-weight: bold;
+}
+.ic-wizard-menu-box .ic-description {
+ font-size: 1.0em;
+}
+
+.ic-wizard-content {
+ padding: 10px;
+ height: 100%;
+ overflow-y: auto;
+}
+
+
 @media (max-width: 960px) {
  .ic-modal-lg .modal-dialog {
   top: 10px;
