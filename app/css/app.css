@@ -1,10 +1,14 @@
 body{
-}
-
-.gb-home-header-1 {
- height: 800px;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ overflow: hidden;
+ background-color: #5A8F95;
  background-image: url(../img/background_1.png);
 }
+
 
 a,
 a.btn-link {
@@ -15,7 +19,23 @@ a:hover,
 a.btn-link:hover {
  color:#016875;
 }
-
+.ic-heading-1 {
+ margin-top: 100px;
+ text-align: center;
+}
+.ic-heading-1 .ic-title{
+ font-size: 3.0em;
+ font-weight: bold;
+ color: #FFF;
+}
+.ic-heading-1 .ic-description{
+ font-size: 1.4em;
+ color: #FFF;
+}
+.ic-heading-1 .ic-extra-description{
+ font-size: 1.0em;
+ color: #F2F2F2;
+}
 .ic-center {
  display: block;
  margin-left: auto;
@@ -23,19 +43,18 @@ a.btn-link:hover {
 }
 
 .ic-play-btn {
- opacity: 0.7;
-	margin-top: 200px;
-	height: 100px;
-	font-size: 2.3em;
-	line-height: 90px;
- border: #AAA solid 2px;
- color: #FFF;
+	margin-top: 50px;
+	height: 80px;
+	font-size: 1.8em;
+	line-height: 60px;
+ border: #EEE solid 5px;
+ color: #F2F2F2;
 }
 
 .ic-play-btn:hover {
  opacity: 1;
- background-color: #FFF;
  color: #444;
+ background-color: #FFF;
 }
 
 .ic-scrollable {
@@ -51,6 +70,41 @@ a.btn-link:hover {
 .ic-chat-row:hover {
  background-color: #E2E2E2;
 }
+
+.ic-box-1 {
+ height: 100px;
+ padding:10px 8px 0 5px;
+ display: block;
+ width: 100%;
+ border: #BBB solid 1px;
+}
+.ic-box-1 .ic-icon-2 {
+ margin: 10px 5px auto 5px;
+}
+
+.ic-box-1 i{
+ margin-top: 11px;
+ color: #CCC;
+}
+.ic-box-1 .ic-heading {
+ color: #FAFAFA;
+}
+.ic-box-1 .ic-title{
+ padding:0;
+ font-size: 1.2em;
+ text-align: left;
+ text-decoration: none;
+ overflow: hidden;
+}
+.ic-box-1 .ic-description{
+ padding:0;
+ font-size: 1em;
+ text-align: left;
+ text-decoration: none;
+ overflow: hidden;
+ margin-bottom: 0;
+}
+
 
 .ic-modal-lg .modal-dialog,
 .ic-modal-lg .modal-content,
@@ -140,7 +194,7 @@ a.btn-link:hover {
  position:fixed;
  width: 100%;
  height: 70px;
- opacity: 0.90;
+ opacity: 0.7;
  filter: alpha(opacity=90);
 }
 
@@ -153,7 +207,7 @@ a.btn-link:hover {
  border-bottom: #0298AB solid 1px!important;
 }
 
-#gb-navbar-nav a {
+#ic-navbar-nav a {
  color: #0298AB;
  cursor: pointer!important;
 }

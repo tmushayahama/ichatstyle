@@ -14,7 +14,7 @@ angular.module('myApp.view1', ['ngRoute'])
            this.action = "";
            this.acts = [
             {description: "Warm Up"}
-           ]
+           ];
            this.currentIndex = 0;
            this.currentAct = this.acts[this.currentIndex];
           };

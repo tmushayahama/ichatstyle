@@ -1,17 +1,33 @@
-<div class="gb-home-header-1 row text-center">
- <div class="container">
-
-  <a data-toggle="modal"
-     data-target="#quick-play"
-     ng-click="quickPlay()"
-     class="ic-play-btn btn col-lg-offset-2 col-lg-4">
-   Quick Chat
-  </a>
-  <a data-toggle="modal"
-     data-target="#open-chat"
-     class="ic-play-btn btn col-lg-4">
-   Request Chat
-  </a>
+<div class="container">
+ <div class="row ">
+  <div class="ic-heading-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-8 col-md-8 col-sm-10 col-xs-12">
+   <div class="ic-title">
+    Have a normal conversation
+   </div>
+   <div class="ic-description">
+    except at random times a situation/statement will appear on the screen and then you have to act it out while continuing your conversation.
+   </div>
+   <div class="ic-extra-description">
+    You will hear a sound when a situation changes.
+   </div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+   <a data-toggle="modal"
+      data-target="#quick-play"
+      ng-click="quickPlay()"
+      class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    Start Quick Chat
+   </a>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+   <a data-toggle="modal"
+      data-target="#open-chat"
+      class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    Start Request Chat
+   </a>
+  </div>
  </div>
 </div>
 <div class="modal ic-modal-lg" id="quick-play">
@@ -42,7 +58,7 @@
   </div>
  </div>
 </div>
-<div class="modal" id="open-chat">
+<div class="modal ic-modal-lg" id="open-chat">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -50,47 +66,54 @@
      <span aria-hidden="true">&times;</span>
      <span class="sr-only">close</span>
     </button>
-    <h2 class="modal-title">
+    <h2 class="modal-title text-center">
      Play
     </h2>
    </div>
-   <div class="modal-body">
-    <div class="ic-scrollable row">
-     <ng-switch on="wizardStep">
-      <div ng-switch-when="0">
-       <ul class="list-group">
-        <li ng-repeat="chat in chats" class="list-group-item">
-         <a class="ic-chat-row col-lg-12 col-md-12 col-sm-12 col-xs-12"
-            ng-click="selectChat($index)">
-          {{chat.title}}
-         </a>
-        </li>
-       </ul>
-      </div>
-      <div ng-switch-when="1">
-       <div class="row ic-selected-heading">
-        <h4>{{selectedChat.title}}</h4>
-       </div>
-       <ul class="list-group">
-        <li ng-repeat="user in users" class="list-group-item">
-         <a class="btn btn-link"
-            ng-click="selectUser(user)">
-          {{user.firstname + " " + user.lastname}}
-         </a>
-         <a class="btn btn-xs btn-primary pull-right"
-            ng-click="requestChat(user)">
-          Request
-         </a>
-        </li>
-       </ul>
-      </div>
-     </ng-switch>
+   <div class="modal-body ic-scrollable">
+    <div class="ic-wizard-menu col-lg-3 col-md-3 col-sm-4 col-xs-12">
+
     </div>
-   </div>
-   <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    <button type="submit" class="btn btn-primary">Poo</button>
+    <div class="ic-wizard-menu col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    </div>
+    <ng-switch on="wizardStep" class="ic-wizard-content col-lg-8 col-md-8 col-sm-8 col-xs-12">
+     <div ng-switch-when="0">
+      <div ng-repeat="chat in chats"
+           class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+       <div ng-click="selectChat($index)" class="ic-box-1">
+        <div class="ic-title">
+         {{chat.title}}
+        </div>
+        <p class="ic-description">
+         ffsfsd
+        </p>
+       </div>
+      </div>
+     </div>
+     <div ng-switch-when="1">
+      <div class="row ic-selected-heading">
+       <h4>{{selectedChat.title}}</h4>
+      </div>
+      <ul class="list-group">
+       <li ng-repeat="user in users" class="list-group-item">
+        <a class="btn btn-link"
+           ng-click="selectUser(user)">
+         {{user.firstname + " " + user.lastname}}
+        </a>
+        <a class="btn btn-xs btn-primary pull-right"
+           ng-click="requestChat(user)">
+         Request
+        </a>
+       </li>
+      </ul>
+     </div>
+    </ng-switch>
    </div>
   </div>
+  <div class="modal-footer">
+   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+   <button type="submit" class="btn btn-primary">Poo</button>
+  </div>
  </div>
+</div>
 </div>
