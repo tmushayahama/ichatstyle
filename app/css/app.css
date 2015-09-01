@@ -21,11 +21,22 @@ a,
 a.btn-link {
  color: #0298AB;
 }
-
 a:hover,
 a.btn-link:hover {
  color:#016875;
 }
+
+
+/*---------------------------------------------
+----------------- BACKGROUNDS -----------------
+----------------------------------------------*/
+.ic-background-1 {
+ background-color: #222930;
+ color: #4EB1BA;
+}
+
+
+
 .ic-heading-1 {
  margin-top: 100px;
  text-align: center;
@@ -125,24 +136,35 @@ a.btn-link:hover {
 }
 
 .ic-modal-lg .modal-dialog {
+ opacity: 0.8;
  top: 50px;
  right: 50px;
  bottom: 50px;
  left: 50px;
+
 }
 .ic-modal-lg .modal-content {
  top: 0px;
  right: 0px;
  bottom: 0px;
  left: 0px;
+ background-color: #222930;
+ color: #FFF;
 }
+
 .ic-modal-lg .modal-header {
  position: absolute;
  height: 70px;
  top: 0px;
  right: 0px;
  left: 0px;
+ background-color: #0F1215;
 }
+.ic-modal-lg .modal-header .modal-title{
+ font-size: 1.5em;
+ color: #4EB1BA;
+}
+
 .ic-modal-lg .modal-body {
  position: absolute;
  overflow: hidden;
@@ -173,10 +195,8 @@ a.btn-link:hover {
 }
 
 .modal-header{
- padding:10px;
- background-color: #FFF;
+ padding:15px;
  border-bottom: #0298AB solid 4px;
- font-size: 2.0em;
 }
 
 .modal-header button{
@@ -191,10 +211,12 @@ a.btn-link:hover {
  width: 100%;
 }
 .ic-display-cell {
+ padding: 15px;
  display:table-cell;
 	text-align: center;
  vertical-align: middle;
-	font-size: 5.0em;
+	font-size: 7.0em;
+ font-weight: bold;
 }
 
 #ic-navbar {
