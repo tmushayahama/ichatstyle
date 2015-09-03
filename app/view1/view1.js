@@ -24,7 +24,7 @@ angular.module('myApp.view1', ['ngRoute'])
            var count = 0;
            var spitAction = function () {
             if (count === 0) {
-             var rand = Math.round(Math.random() * (8000 - 3000)) + 3000;
+             var rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
              self.quickPlayTimer = setTimeout(spitAction, rand);
             } else if (count < self.acts.length) {
              self.currentIndex = count;
@@ -48,7 +48,7 @@ angular.module('myApp.view1', ['ngRoute'])
           ImprovConv.prototype.quickPlay = function () {
            console.log("I am a quick play");
            var self = this;
-           $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
+           $http.post("../site/allActions", {}).success(function (data) {
             self.acts = [];
             angular.forEach(data["results"], function (value, key) {
              self.acts.push({description: value.action});
@@ -99,7 +99,7 @@ angular.module('myApp.view1', ['ngRoute'])
             {id: 0},
             {description: ""}
            ];
-           $http.post("http://localhost/ichatstyle/site/allActions", {}).success(function (data) {
+           $http.post("../site/allActions", {}).success(function (data) {
             angular.forEach(data["results"], function (value, key) {
              acts.push({description: value["action"].action});
             });
@@ -132,7 +132,7 @@ angular.module('myApp.view1', ['ngRoute'])
           };
           $scope.getChats = function () {
            var chats = [];
-           $http.post("http://localhost/ichatstyle/site/chats", {}).success(function (data) {
+           $http.post("../site/chats", {}).success(function (data) {
             angular.forEach(data["chats"], function (value, key) {
              chats.push({title: value.title});
             });
@@ -152,7 +152,7 @@ angular.module('myApp.view1', ['ngRoute'])
             user_id: user.id,
             chat_id: $scope.selectedChat.id
            };
-           $http.post("http://localhost/ichatstyle/site/requestChat", {}).success(function (data) {
+           $http.post("../site/requestChat", {}).success(function (data) {
             if (data.error) {
              self.error = data.error;
              return typeof error === 'function' && error(data);
@@ -166,7 +166,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.getUsers = function () {
            var users = [];
-           $http.post("http://localhost/ichatstyle/site/users", {}).success(function (data) {
+           $http.post("../site/users", {}).success(function (data) {
             angular.forEach(data["users"], function (value, key) {
              users.push({
               id: value.id,
@@ -212,6 +212,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.selectChat = function (index) {
            $scope.selectedChat = $scope.chats[index];
+           $scope.wizardStep = 1;
           }
           $scope.selectUser = function (index) {
            $scope.selectedUser = $scope.users[index];

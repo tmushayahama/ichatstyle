@@ -2,7 +2,7 @@
  <div class="row ">
   <div class="ic-heading-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-8 col-md-8 col-sm-10 col-xs-12">
    <div class="ic-title">
-    Have a normal conversation
+    Try it, start a normal conversation
    </div>
    <div class="ic-description">
     except at random times a situation/statement will appear on the screen and then you have to act it out while continuing your conversation.
@@ -80,31 +80,20 @@
      <span class="sr-only">close</span>
     </button>
     <div class="modal-title text-center">
-     Request Chat Play
+     Request Chat Play {{selectedChat.title}}
     </div>
    </div>
    <div class="modal-body">
-    <div class="ic-wizard-menu col-lg-4 col-md-4 col-sm-4 col-xs-12">
-     <div class="ic-wizard-menu-box">
-      <div class="ic-title">
-       <i ng-show="false" class="text-success fa fa-check"></i> Select a Chat
-      </div>
-      <div class="ic-description">
-       For fun purposes, you cannot create a chat by yourself. Someone should create it for
-       you.
-      </div>
-     </div>
-    </div>
-    <ng-switch on="wizardStep" class="ic-wizard-content col-lg-8 col-md-8 col-sm-8 col-xs-12">
+    <ng-switch on="wizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
      <div ng-switch-when="0">
       <div ng-repeat="chat in chats"
-           class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+           class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
        <div ng-click="selectChat($index)" class="ic-box-1">
         <div class="ic-title">
          {{chat.title}}
         </div>
         <p class="ic-description">
-         ffsfsd
+         {{chat.description}}
         </p>
        </div>
       </div>
@@ -130,8 +119,19 @@
    </div>
   </div>
   <div class="modal-footer">
-   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-   <button type="submit" class="btn btn-primary">Poo</button>
+   <div class="btn-group col-lg-offset-5 col-lg-2">
+    <button type="button"
+            data-ng-click="improvConv.restartChat()"
+            class="btn btn-default col-lg-6">
+     Restart
+    </button>
+    <button type="button"
+            class="btn btn-danger col-lg-6"
+            data-ng-click="improvConv.endChat()"
+            data-dismiss="modal">
+     End
+    </button>
+   </div>
   </div>
  </div>
 </div>
