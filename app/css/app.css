@@ -100,6 +100,12 @@ a.btn-link:hover {
  width: 100%;
  border: #BBB solid 1px;
 }
+.ic-box-1:hover {
+ background-color: #FFF;
+ color: #000;
+ opacity: 0.7;
+}
+
 .ic-box-1 .ic-icon-2 {
  margin: 10px 5px auto 5px;
 }
@@ -129,11 +135,19 @@ a.btn-link:hover {
 
 
 .ic-box-2 {
- height: 250px;
+ text-align: center;
+ margin-top: 20px;
+ height: 100px;
  padding:10px 8px 0 5px;
  display: block;
  width: 100%;
  border: #BBB solid 1px;
+}
+
+.ic-box-2:hover {
+ background-color: #FFF;
+ color: #000;
+ opacity: 0.7;
 }
 
 .ic-box-2 .ic-icon-2 {
@@ -149,15 +163,14 @@ a.btn-link:hover {
 }
 .ic-box-2 .ic-title{
  padding:0;
- font-size: 1.2em;
- text-align: left;
+ margin-bottom: 20px;
+ font-size: 1.5em;
  text-decoration: none;
  overflow: hidden;
 }
 .ic-box-2 .ic-description{
  padding:0;
  font-size: 1em;
- text-align: left;
  text-decoration: none;
  overflow: hidden;
  margin-bottom: 0;

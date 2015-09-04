@@ -111,6 +111,7 @@ angular.module('myApp.view1', ['ngRoute'])
             $scope.$apply(function ()
             {
              self.currentAct = self.acts[self.currentIndex];
+             $scope.quickPlayWizardStep = 0;
             });
            });
           };
