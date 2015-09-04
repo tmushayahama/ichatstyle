@@ -45,7 +45,7 @@ angular.module('myApp.view1', ['ngRoute'])
            spitAction();
           };
 
-          ImprovConv.prototype.quickPlay = function (mode) {
+          ImprovConv.prototype.quickPlay = function (mode, chatId) {
            switch (mode) {
             case 0:
              console.log("I am a quick play mode 1");
@@ -68,11 +68,12 @@ angular.module('myApp.view1', ['ngRoute'])
             case 1:
              console.log("I am a quick play mode 2");
              var self = this;
-             $http.post("../site/allActions", {}).success(function (data) {
+             $http.post("../site/allChatActions/chatId/" + chatId, {}).success(function (data) {
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action});
+               self.acts.push({description: value.action.action});
               });
+              console.log("Actions", data["results"]);
               self.spitActions();
               if (data.error) {
                self.error = data.error;
@@ -156,7 +157,7 @@ angular.module('myApp.view1', ['ngRoute'])
            var chats = [];
            $http.post("../site/chats", {}).success(function (data) {
             angular.forEach(data["chats"], function (value, key) {
-             chats.push({title: value.title});
+             chats.push(value);
             });
             if (data.error) {
              self.error = data.error;
@@ -211,9 +212,7 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.quickPlayWizardStep = 0;
           $scope.chats = [];
           $scope.users = [];
-          $scope.selectedChat;
-
-
+          $scope.selectedChat = [];
 
           $scope.wizardPrev = function () {
            if ($scope.wizardStep === 3) {
@@ -237,8 +236,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.selectChat = function (index) {
            $scope.selectedChat = $scope.chats[index];
-           $scope.wizardStep = 1;
+           $scope.quickPlayWizardStep = 1;
+           $scope.improvConv.quickPlay(1);
           }
+
           $scope.selectUser = function (index) {
            $scope.selectedUser = $scope.users[index];
           }
@@ -251,15 +252,26 @@ angular.module('myApp.view1', ['ngRoute'])
            $scope.improvConv.start();
           }
 
+          $scope.selectChatsWizard = function () {
+           $scope.quickPlayWizardStep = 1;
+          }
+
           $scope.selectRandomPlay = function () {
            $scope.quickPlayWizardStep = 2;
+           $scope.improvConv.quickPlay(0);
+          }
+
+          $scope.selectChatPlay = function (chatId) {
+           $scope.quickPlayWizardStep = 2;
+           $scope.improvConv.quickPlay(1, chatId);
+          }
+
+          $scope.selectChat = function (index) {
+           $scope.selectedChat = $scope.chats[index];
+           $scope.quickPlayWizardStep = 1;
            $scope.improvConv.quickPlay(1);
           }
 
-          $scope.chooseChatPlay = function () {
-           $scope.quickPlayWizardStep = 1;
-           $scope.improvConv.quickPlay(2);
-          }
 
           $("body").on("click", "#ic-samplestart-btn", function (e) {
            $scope.improvConv.quickPlay();

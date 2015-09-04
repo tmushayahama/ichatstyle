@@ -71,7 +71,7 @@ class SiteController extends Controller {
   ));
  }
 
- public function actionChatActions($chatId) {
+ public function actionAllChatActions($chatId) {
   $chatActions = ChatAction::getAllActions($chatId);
   $actions = array();
   foreach ($chatActions as $chatAction) {

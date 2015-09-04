@@ -60,7 +60,7 @@
        </div>
       </div>
       <div class="col-lg-4">
-       <div data-ng-click="chooseChat()"
+       <div data-ng-click="selectChatsWizard()"
             class="ic-box-2">
         <div class="ic-title">
          Choose Chat
@@ -74,7 +74,7 @@
      <div ng-switch-when="1">
       <div ng-repeat="chat in chats"
            class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-       <div ng-click="selectChat($index)" class="ic-box-1">
+       <div ng-click="selectChatPlay(chat.id)" class="ic-box-1">
         <div class="ic-title">
          {{chat.title}}
         </div>
