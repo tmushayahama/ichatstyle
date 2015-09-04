@@ -45,23 +45,45 @@ angular.module('myApp.view1', ['ngRoute'])
            spitAction();
           };
 
-          ImprovConv.prototype.quickPlay = function () {
-           console.log("I am a quick play");
-           var self = this;
-           $http.post("../site/allActions", {}).success(function (data) {
-            self.acts = [];
-            angular.forEach(data["results"], function (value, key) {
-             self.acts.push({description: value.action});
-            });
-            self.spitActions();
-            if (data.error) {
-             self.error = data.error;
-             return typeof error === 'function' && error(data);
-            }
-            typeof success === 'function' && success(data);
-           }).error(function (data) {
-            typeof error === 'function' && error(data);
-           });
+          ImprovConv.prototype.quickPlay = function (mode) {
+           switch (mode) {
+            case 0:
+             console.log("I am a quick play mode 1");
+             var self = this;
+             $http.post("../site/allActions", {}).success(function (data) {
+              self.acts = [];
+              angular.forEach(data["results"], function (value, key) {
+               self.acts.push({description: value.action});
+              });
+              self.spitActions();
+              if (data.error) {
+               self.error = data.error;
+               return typeof error === 'function' && error(data);
+              }
+              typeof success === 'function' && success(data);
+             }).error(function (data) {
+              typeof error === 'function' && error(data);
+             });
+             break;
+            case 1:
+             console.log("I am a quick play mode 2");
+             var self = this;
+             $http.post("../site/allActions", {}).success(function (data) {
+              self.acts = [];
+              angular.forEach(data["results"], function (value, key) {
+               self.acts.push({description: value.action});
+              });
+              self.spitActions();
+              if (data.error) {
+               self.error = data.error;
+               return typeof error === 'function' && error(data);
+              }
+              typeof success === 'function' && success(data);
+             }).error(function (data) {
+              typeof error === 'function' && error(data);
+             });
+             break;
+           }
           };
 
           ImprovConv.prototype.restartQuickPlay = function () {
@@ -186,10 +208,13 @@ angular.module('myApp.view1', ['ngRoute'])
           }
 
           $scope.improvConv = new ImprovConv(1);
-          $scope.wizardStep = 0;
+          $scope.quickPlayWizardStep = 0;
           $scope.chats = [];
           $scope.users = [];
           $scope.selectedChat;
+
+
+
           $scope.wizardPrev = function () {
            if ($scope.wizardStep === 3) {
             $scope.wizardStep = 2;
@@ -224,6 +249,16 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.start = function () {
            $scope.improvConv.start();
+          }
+
+          $scope.selectRandomPlay = function () {
+           $scope.quickPlayWizardStep = 2;
+           $scope.improvConv.quickPlay(1);
+          }
+
+          $scope.chooseChatPlay = function () {
+           $scope.quickPlayWizardStep = 1;
+           $scope.improvConv.quickPlay(2);
           }
 
           $("body").on("click", "#ic-samplestart-btn", function (e) {

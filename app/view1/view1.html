@@ -18,7 +18,6 @@
       data-backdrop="static"
       data-keyboard="false"
       data-target="#quick-play"
-      ng-click="quickPlay()"
       class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
     Start Quick Chat
    </a>
@@ -47,11 +46,52 @@
     </div>
    </div>
    <div class="modal-body">
-    <div class="ic-display-table">
-     <div class="ic-display-cell">
-      {{improvConv.currentAct.description}}
+    <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div ng-switch-when="0">
+      <div class="col-lg-offset-2 col-lg-4">
+       <div data-ng-click="selectRandomPlay()"
+            class="ic-box-2">
+        <div class="ic-title">
+         Random Actions
+        </div>
+        <div class="ic-description">
+         Using our algo
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div data-ng-click="chooseChat()"
+            class="ic-box-2">
+        <div class="ic-title">
+         Choose Chat
+        </div>
+        <div class="ic-description">
+         from the chat list
+        </div>
+       </div>
+      </div>
      </div>
-    </div>
+     <div ng-switch-when="1">
+      <div ng-repeat="chat in chats"
+           class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+       <div ng-click="selectChat($index)" class="ic-box-1">
+        <div class="ic-title">
+         {{chat.title}}
+        </div>
+        <p class="ic-description">
+         {{chat.description}}
+        </p>
+       </div>
+      </div>
+     </div>
+     <div ng-switch-when="2">
+      <div class="ic-display-table">
+       <div class="ic-display-cell">
+        {{improvConv.currentAct.description}}
+       </div>
+      </div>
+     </div>
+    </ng-switch>
    </div>
    <div class="modal-footer">
     <div class="btn-group col-lg-offset-5 col-lg-2">

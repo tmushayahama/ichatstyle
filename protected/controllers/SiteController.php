@@ -71,6 +71,20 @@ class SiteController extends Controller {
   ));
  }
 
+ public function actionChatActions($chatId) {
+  $chatActions = ChatAction::getAllActions($chatId);
+  $actions = array();
+  foreach ($chatActions as $chatAction) {
+   array_push($actions, array(
+     "chatAction" => $chatAction,
+     "action" => $chatAction->action,
+   ));
+  }
+  echo CJSON::encode(array(
+    "results" => $actions,
+  ));
+ }
+
  public function actionNextAction() {
   $charAction = ChatAction::getNextAction();
   echo CJSON::encode(array(

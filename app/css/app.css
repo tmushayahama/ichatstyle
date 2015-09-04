@@ -128,6 +128,41 @@ a.btn-link:hover {
 }
 
 
+.ic-box-2 {
+ height: 250px;
+ padding:10px 8px 0 5px;
+ display: block;
+ width: 100%;
+ border: #BBB solid 1px;
+}
+
+.ic-box-2 .ic-icon-2 {
+ margin: 10px 5px auto 5px;
+}
+
+.ic-box-2 i{
+ margin-top: 11px;
+ color: #CCC;
+}
+.ic-box-2 .ic-heading {
+ color: #FAFAFA;
+}
+.ic-box-2 .ic-title{
+ padding:0;
+ font-size: 1.2em;
+ text-align: left;
+ text-decoration: none;
+ overflow: hidden;
+}
+.ic-box-2 .ic-description{
+ padding:0;
+ font-size: 1em;
+ text-align: left;
+ text-decoration: none;
+ overflow: hidden;
+ margin-bottom: 0;
+}
+
 .ic-modal-lg .modal-dialog,
 .ic-modal-lg .modal-content,
 .ic-modal-lg .modal-footer {
