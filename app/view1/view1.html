@@ -2,13 +2,13 @@
  <div class="row ">
   <div class="ic-heading-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-8 col-md-8 col-sm-10 col-xs-12">
    <div class="ic-title">
-    Try it, start a normal conversation
+    Start a normal conversation except
    </div>
    <div class="ic-description">
-    except at random times a situation/statement will appear on the screen and then you have to act it out while continuing your conversation.
+    at random times a theme/subject will appear on the screen and then you have to act it out while continuing your conversation.
    </div>
    <div class="ic-extra-description">
-    You will hear a sound when a situation changes.
+    You will hear a sound when a theme changes.
    </div>
   </div>
  </div>
@@ -55,7 +55,7 @@
          Random Actions
         </div>
         <div class="ic-description">
-         Using our algo
+         Using our algorithms, a random theme will appear from all out theme list.
         </div>
        </div>
       </div>
@@ -66,7 +66,7 @@
          Choose Chat
         </div>
         <div class="ic-description">
-         from the chat list
+         These are less random as they are categorized.
         </div>
        </div>
       </div>
@@ -84,24 +84,22 @@
        </div>
       </div>
      </div>
-     <div ng-switch-when="2">
-      <div class="ic-display-table">
-       <div class="ic-display-cell">
-        {{improvConv.currentAct.description}}
-       </div>
+     <div ng-switch-when="2" class="ic-display-table">
+      <div class="ic-display-cell">
+       {{improvConv.currentAct.description}}
       </div>
      </div>
     </ng-switch>
    </div>
    <div class="modal-footer">
-    <div class="btn-group col-lg-offset-5 col-lg-2">
+    <div class="btn-group col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-8">
      <button type="button"
              data-ng-click="improvConv.restartQuickPlay()"
-             class="btn btn-default col-lg-6">
+             class="btn btn-default col-lg-6 col-md-6 col-sm-6 col-xs-6">
       Restart
      </button>
      <button type="button"
-             class="btn btn-danger col-lg-6"
+             class="btn btn-danger col-lg-6 col-md-6 col-sm-6 col-xs-6"
              data-ng-click="improvConv.endQuickPlay()"
              data-dismiss="modal">
       End

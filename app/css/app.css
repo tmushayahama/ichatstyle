@@ -73,11 +73,7 @@ a.btn-link:hover {
  color: #F2F2F2;
 }
 
-.ic-play-btn:hover {
- opacity: 1;
- color: #444;
- background-color: #FFF;
-}
+
 
 .ic-scrollable {
  overflow-y: auto;
@@ -99,12 +95,10 @@ a.btn-link:hover {
  display: block;
  width: 100%;
  border: #BBB solid 1px;
-}
-.ic-box-1:hover {
- background-color: #FFF;
  color: #000;
- opacity: 0.7;
+ background-color: #B6CFD3;
 }
+
 
 .ic-box-1 .ic-icon-2 {
  margin: 10px 5px auto 5px;
@@ -142,12 +136,8 @@ a.btn-link:hover {
  display: block;
  width: 100%;
  border: #BBB solid 1px;
-}
-
-.ic-box-2:hover {
- background-color: #FFF;
  color: #000;
- opacity: 0.7;
+ background-color: #B6CFD3;
 }
 
 .ic-box-2 .ic-icon-2 {
@@ -275,7 +265,7 @@ a.btn-link:hover {
  left:0;
  position:fixed;
  width: 100%;
- height: 70px;
+ height: 60px;
  opacity: 0.7;
  filter: alpha(opacity=90);
 }
@@ -294,8 +284,7 @@ a.btn-link:hover {
  cursor: pointer!important;
 }
 .navbar-header {
- padding-top: 5px;
- text-align: center;
+ padding-top: 12px;
 }
 
 .navbar-header a {
@@ -305,7 +294,6 @@ a.btn-link:hover {
  color:  #0298AB;
 }
 .navbar-header .ic-logo {
- margin-top: 15px;
  font-size: 1.6em;
 }
 
@@ -315,6 +303,7 @@ a.btn-link:hover {
 }
 
 #ic-navbar-nav {
+ margin-top: 15px;
 }
 #ic-navbar-nav a {
  text-align: center;
