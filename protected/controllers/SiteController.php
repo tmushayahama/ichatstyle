@@ -86,7 +86,6 @@ class SiteController extends Controller {
  }
 
  public function actionInviteChat($chatId = null) {
-  $result = false;
   $newChat = new Chat();
 
   $newChat->creator_id = 1;
@@ -101,11 +100,11 @@ class SiteController extends Controller {
    $chatInvite->chat_id = $newChat->id;
    $chatInvite->codename = "pooo";
    $chatInvite->passcode = "poo2";
-   $result = $chatInvite->save(false);
+   $chatInvite->save(false);
   }
 
   echo CJSON::encode(array(
-    "results" => $result,
+    "inviteChat" => $chatInvite,
   ));
  }
 

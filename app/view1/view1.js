@@ -43,12 +43,26 @@ angular.module('myApp.view1', ['ngRoute'])
            spitAction();
           };
 
-          ImprovConv.prototype.listenInvite = function () {
+          ImprovConv.prototype.listenInvite = function (mode) {
            var self = this;
            var count = 0;
            var isReady = function () {
             self.currentIndex = count;
             setTimeout(function () {
+             $http.post("../site/inviteChat", {}).success(function (data) {
+              self.acts = [];
+              angular.forEach(data["results"], function (value, key) {
+               self.acts.push({description: value.action});
+              });
+              self.spitActions();
+              if (data.error) {
+               self.error = data.error;
+               return typeof error === 'function' && error(data);
+              }
+              typeof success === 'function' && success(data);
+             }).error(function (data) {
+              typeof error === 'function' && error(data);
+             });
              $scope.$apply(function ()
              {
 
@@ -64,14 +78,9 @@ angular.module('myApp.view1', ['ngRoute'])
            var self = this;
            switch (mode) {
             case 1:
-             console.log("Im now listening...");
-
-             $http.post("../site/allActions", {}).success(function (data) {
-              self.acts = [];
-              angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action});
-              });
-              self.spitActions();
+             console.log("Im now inviting...");
+             $http.post("../site/inviteChat", {}).success(function (data) {
+              console.log("InviteChat", data["inviteChat"]);
               if (data.error) {
                self.error = data.error;
                return typeof error === 'function' && error(data);
@@ -275,6 +284,7 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.chats = [];
           $scope.users = [];
           $scope.selectedChat = [];
+
           $scope.selectAction = function (actionType) {
            switch (actionType) {
             case 1:
@@ -309,6 +319,15 @@ angular.module('myApp.view1', ['ngRoute'])
             case 3:
              $scope.quickPlayWizardStep = "invite-play";
              $scope.improvConv.invitePlay(2);
+             break;
+           }
+          };
+
+          $scope.invitePlay = function (inviteType) {
+           switch (inviteType) {
+            case 1:
+             $scope.improvConv.invitePlay(1);
+             $scope.quickPlayWizardStep = "invite-wait";
              break;
            }
           };
