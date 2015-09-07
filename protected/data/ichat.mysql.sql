@@ -140,6 +140,23 @@ CREATE TABLE `ic_chat_assignment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Table structure for table `ic_chat_assignment`
+--
+DROP TABLE IF EXISTS `ic_chat_invite`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ic_chat_invite` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `chat_id` int(11) NOT NULL,
+  `codename` varchar(500) NOT NULL,
+  `passcode` varchar(500) NOT NULL,
+  `status` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `chat_invite_chat_id` (`chat_id`),
+  CONSTRAINT `chat_invite_chat_id` FOREIGN KEY (`chat_id`) REFERENCES `ic_chat` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
 -- Table structure for table `ic_profile`
 --
 DROP TABLE IF EXISTS `ic_profile`;

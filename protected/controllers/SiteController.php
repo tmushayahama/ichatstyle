@@ -85,6 +85,44 @@ class SiteController extends Controller {
   ));
  }
 
+ public function actionInviteChat($chatId = null) {
+  $result = false;
+  $newChat = new Chat();
+
+  $newChat->creator_id = 1;
+  $newChat->title = "temp 1";
+  $newChat->status = -1;
+
+  if ($newChat->save(false)) {
+   if ($chatId) {
+    ChatAction::copyActions($chatId, $newChat->id);
+   }
+   $chatInvite = new ChatInvite();
+   $chatInvite->chat_id = $newChat->id;
+   $chatInvite->codename = "pooo";
+   $chatInvite->passcode = "poo2";
+   $result = $chatInvite->save(false);
+  }
+
+  echo CJSON::encode(array(
+    "results" => $result,
+  ));
+ }
+
+ public function actionIsReady($username, $password) {
+  $chatActions = ChatAction::getAllActions($chatId);
+  $actions = array();
+  foreach ($chatActions as $chatAction) {
+   array_push($actions, array(
+     "chatAction" => $chatAction,
+     "action" => $chatAction->action,
+   ));
+  }
+  echo CJSON::encode(array(
+    "results" => $actions,
+  ));
+ }
+
  public function actionNextAction() {
   $charAction = ChatAction::getNextAction();
   echo CJSON::encode(array(

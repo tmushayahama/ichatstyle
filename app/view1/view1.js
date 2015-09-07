@@ -42,6 +42,68 @@ angular.module('myApp.view1', ['ngRoute'])
            };
            spitAction();
           };
+
+          ImprovConv.prototype.listenInvite = function () {
+           var self = this;
+           var count = 0;
+           var isReady = function () {
+            self.currentIndex = count;
+            setTimeout(function () {
+             $scope.$apply(function ()
+             {
+
+             });
+            });
+            self.isReadyTimer = setTimeout(isReady, 5000);
+            count++;
+           };
+           isReady();
+          };
+
+          ImprovConv.prototype.invitePlay = function (mode) {
+           var self = this;
+           switch (mode) {
+            case 1:
+             console.log("Im now listening...");
+
+             $http.post("../site/allActions", {}).success(function (data) {
+              self.acts = [];
+              angular.forEach(data["results"], function (value, key) {
+               self.acts.push({description: value.action});
+              });
+              self.spitActions();
+              if (data.error) {
+               self.error = data.error;
+               return typeof error === 'function' && error(data);
+              }
+              typeof success === 'function' && success(data);
+             }).error(function (data) {
+              typeof error === 'function' && error(data);
+             });
+             break;
+            case 2:
+             console.log("I am a quick play mode 2");
+             var self = this;
+             $http.post("../site/allChatActions/chatId/" + chatId, {}).success(function (data) {
+              self.acts = [];
+              angular.forEach(data["results"], function (value, key) {
+               self.acts.push({description: value.action.action});
+              });
+              console.log("Actions", data["results"]);
+              self.spitActions();
+              if (data.error) {
+               self.error = data.error;
+               return typeof error === 'function' && error(data);
+              }
+              typeof success === 'function' && success(data);
+             }).error(function (data) {
+              typeof error === 'function' && error(data);
+             });
+             break;
+           }
+          };
+
+
           ImprovConv.prototype.quickPlay = function (mode, chatId) {
            switch (mode) {
             case 1:
@@ -83,6 +145,8 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
+
+
           ImprovConv.prototype.restartQuickPlay = function () {
            var self = this;
            clearTimeout(self.quickPlayTimer);
@@ -111,6 +175,7 @@ angular.module('myApp.view1', ['ngRoute'])
             });
            });
           };
+
           ImprovConv.prototype.start = function () {
            console.log("I am being start");
            var self = this;
@@ -150,7 +215,6 @@ angular.module('myApp.view1', ['ngRoute'])
            spitAction();
           };
 
-
           $scope.getChats = function () {
            $scope.chats = [];
            $http.post("../site/chats", {}).success(function (data) {
@@ -167,6 +231,7 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
           };
+
           $scope.requestChat = function (user) {
            var data = {
             user_id: user.id,
@@ -182,7 +247,7 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
            $scope.users = users;
-          }
+          };
 
           $scope.getUsers = function () {
            var users = [];
@@ -203,7 +268,7 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
            $scope.users = users;
-          }
+          };
 
           $scope.improvConv = new ImprovConv(1);
           $scope.quickPlayWizardStep = "actions";
@@ -221,6 +286,7 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
+
           $scope.selectChat = function (chatId) {
            $scope.quickPlayWizardStep = "start-type";
            $scope.selectedChat = $scope.chats.keys(chatId);
@@ -247,22 +313,22 @@ angular.module('myApp.view1', ['ngRoute'])
            }
           };
 
-
           $scope.selectUser = function (index) {
            $scope.selectedUser = $scope.users[index];
-          }
+          };
 
           $scope.quickPlay = function () {
            $scope.improvConv.quickPlay();
-          }
+          };
 
           $scope.start = function () {
            $scope.improvConv.start();
-          }
+          };
 
           $scope.selectChatsWizard = function () {
            $scope.quickPlayWizardStep = 1;
           };
+
           $scope.selectRandomPlay = function () {
            $scope.quickPlayWizardStep = 2;
            $scope.improvConv.quickPlay(0);

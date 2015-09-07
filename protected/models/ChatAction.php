@@ -49,13 +49,27 @@ class ChatAction extends CActiveRecord {
   return ChatAction::Model()->findAll($chatActionCriteria);
  }
 
+ public static function copyActions($fromChatId, $toChatId) {
+  $fromChatActionCriteria = new CDbCriteria;
+  $fromChatActionCriteria->addCondition("chat_id=" . $fromChatId);
+  $fromChatActions = ChatAction::Model()->findAll($fromChatActionCriteria);
+
+  foreach ($fromChatActions as $fromChatAction) {
+   $toChatAction = new ChatAction();
+   $toChatAction->chat_id = $toChatId;
+   $toChatAction->action_id = $fromChatAction->id;
+   $toChatAction->save(false);
+  }
+ }
+
  /**
   * Returns the static model of the specified AR class.
   * @param string $className active record class name.
   * @return ChatAction the static model class
   */
  public static function model($className = __CLASS__) {
-  return parent::model($className);
+  return parent::model(
+      $className);
  }
 
  /**
@@ -69,6 +83,7 @@ class ChatAction extends CActiveRecord {
   * @return array validation rules for model attributes.
   */
  public function rules() {
+
   // NOTE: you should only define rules for those attributes that
   // will receive user inputs.
   return array(
@@ -85,6 +100,7 @@ class ChatAction extends CActiveRecord {
   * @return array relational rules.
   */
  public function relations() {
+
   // NOTE: you may need to adjust the relation name and the related
   // class name for the relations automatically generated below.
   return array(
@@ -115,6 +131,7 @@ class ChatAction extends CActiveRecord {
   * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
   */
  public function search() {
+
   // Warning: Please modify the following code to remove attributes that
   // should not be searched.
 

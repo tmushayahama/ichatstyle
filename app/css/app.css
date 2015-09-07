@@ -67,10 +67,15 @@ a.btn-link:hover {
 .ic-play-btn {
  margin-bottom: 10px;
 	height: 80px;
-	font-size: 1.8em;
+	font-size: 2.5em;
 	line-height: 60px;
  border: #EEE solid 5px;
  color: #F2F2F2;
+}
+
+.ic-play-btn:hover {
+ border: #BBB solid 5px;
+ color: #CCC;
 }
 
 
@@ -90,15 +95,19 @@ a.btn-link:hover {
 }
 
 .ic-box-1 {
+ overflow: hidden;
  height: 100px;
- padding:10px 8px 0 5px;
+ padding:10px;
  display: block;
  width: 100%;
- border: #BBB solid 1px;
- color: #000;
- background-color: #B6CFD3;
+ border: #EEE solid 5px;
+ color: #F2F2F2;
 }
 
+.ic-box-1:hover {
+ border: #BBB solid 5px;
+ color: #CCC;
+}
 
 .ic-box-1 .ic-icon-2 {
  margin: 10px 5px auto 5px;
@@ -112,15 +121,15 @@ a.btn-link:hover {
  color: #FAFAFA;
 }
 .ic-box-1 .ic-title{
- padding:0;
- font-size: 1.2em;
+ padding:0px;
+ font-size: 1.5em;
  text-align: left;
  text-decoration: none;
  overflow: hidden;
 }
 .ic-box-1 .ic-description{
  padding:0;
- font-size: 1em;
+ font-size: 1.1em;
  text-align: left;
  text-decoration: none;
  overflow: hidden;
@@ -129,15 +138,20 @@ a.btn-link:hover {
 
 
 .ic-box-2 {
+ overflow: hidden;
  text-align: center;
  margin-top: 20px;
- height: 100px;
- padding:10px 8px 0 5px;
+ height: 150px;
+ padding:10px;
  display: block;
  width: 100%;
- border: #BBB solid 1px;
- color: #000;
- background-color: #B6CFD3;
+ border: #EEE solid 5px;
+ color: #F2F2F2;
+}
+
+.ic-box-2:hover {
+ border: #BBB solid 5px;
+ color: #CCC;
 }
 
 .ic-box-2 .ic-icon-2 {
@@ -153,14 +167,15 @@ a.btn-link:hover {
 }
 .ic-box-2 .ic-title{
  padding:0;
- margin-bottom: 20px;
- font-size: 1.5em;
+ margin-bottom: 5px;
+ font-size: 1.3em;
+ font-weight: bold;
  text-decoration: none;
  overflow: hidden;
 }
 .ic-box-2 .ic-description{
  padding:0;
- font-size: 1em;
+ font-size: 1.2em;
  text-decoration: none;
  overflow: hidden;
  margin-bottom: 0;
