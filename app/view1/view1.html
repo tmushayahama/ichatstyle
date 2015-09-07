@@ -13,22 +13,13 @@
   </div>
  </div>
  <div class="row ic-play-btn-row">
-  <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-4 col-md-4 col-sm-5 col-xs-12">
+  <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-offset-2 col-lg-4 col-md-4 col-sm-8 col-xs-8">
    <a data-toggle="modal"
       data-backdrop="static"
       data-keyboard="false"
       data-target="#quick-play"
       class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    Start Quick Chat
-   </a>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
-   <a data-toggle="modal"
-      data-backdrop="static"
-      data-keyboard="false"
-      data-target="#open-chat"
-      class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    Start Request Chat
+    Start Chat
    </a>
   </div>
  </div>
@@ -42,15 +33,14 @@
      <span class="sr-only">close</span>
     </button>
     <div class="modal-title text-center">
-     QUICK CHAT PLAY
+     PLAY
     </div>
    </div>
    <div class="modal-body">
     <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-     <div ng-switch-when="0">
+     <div ng-switch-when="actions">
       <div class="col-lg-offset-2 col-lg-4">
-       <div data-ng-click="selectRandomPlay()"
-            class="ic-box-2">
+       <div data-ng-click="selectAction(1)" class="ic-box-2">
         <div class="ic-title">
          Random Actions
         </div>
@@ -60,8 +50,7 @@
        </div>
       </div>
       <div class="col-lg-4">
-       <div data-ng-click="selectChatsWizard()"
-            class="ic-box-2">
+       <div data-ng-click="selectAction(2)" class="ic-box-2">
         <div class="ic-title">
          Choose Chat
         </div>
@@ -71,20 +60,76 @@
        </div>
       </div>
      </div>
-     <div ng-switch-when="1">
+     <div ng-switch-when="chats-selection">
       <div ng-repeat="chat in chats"
            class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-       <div ng-click="selectChatPlay(chat.id)" class="ic-box-1">
+       <div ng-click="selectChat(chat.id)" class="ic-box-1">
         <div class="ic-title">
-         {{chat.title}}
+         {{chat.value.title}}
         </div>
         <p class="ic-description">
-         {{chat.description}}
+         {{chat.value.description}}
         </p>
        </div>
       </div>
      </div>
-     <div ng-switch-when="2" class="ic-display-table">
+     <div ng-switch-when="start-type">
+      <div class="col-lg-4">
+       <div data-ng-click="selectPlay(1)" class="ic-box-2">
+        <div class="ic-title">
+         Quick Start
+        </div>
+        <div class="ic-description">
+         It just on your screen
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div data-ng-click="selectPlay(2)" class="ic-box-2">
+        <div class="ic-title">
+         Sync with code
+        </div>
+        <div class="ic-description">
+
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div data-ng-click="selectPlay(3)" class="ic-box-2">
+        <div class="ic-title">
+         Invite a Player
+        </div>
+        <div class="ic-description">
+
+        </div>
+       </div>
+      </div>
+     </div>
+     <div ng-switch-when="invite">
+      <ul class="list-group">
+       <li class="list-group-item">
+        <a class="btn btn-link" ng-click="waitPlay()">
+         {{"name: " + code.Name + " password: " + code.Password}}
+        </a>
+        <a class="btn btn-xs btn-primary pull-right"  ng-click="requestChat(user)">
+         Request
+        </a>
+       </li>
+       <li ng-repeat="user in users" class="list-group-item">
+        <a class="btn btn-link" ng-click="selectUser(user)">
+         {{user.firstname + " " + user.lastname}}
+        </a>
+        <a class="btn btn-xs btn-primary pull-right"
+           ng-click="requestChat(user)">
+         Request
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div ng-switch-when="invite" class="">
+      this is an invite
+     </div>
+     <div ng-switch-when="play" class="ic-display-table">
       <div class="ic-display-cell">
        {{improvConv.currentAct.description}}
       </div>
@@ -140,18 +185,6 @@
       <div class="row ic-selected-heading">
        <h4>{{selectedChat.title}}</h4>
       </div>
-      <ul class="list-group">
-       <li ng-repeat="user in users" class="list-group-item">
-        <a class="btn btn-link"
-           ng-click="selectUser(user)">
-         {{user.firstname + " " + user.lastname}}
-        </a>
-        <a class="btn btn-xs btn-primary pull-right"
-           ng-click="requestChat(user)">
-         Request
-        </a>
-       </li>
-      </ul>
      </div>
     </ng-switch>
    </div>

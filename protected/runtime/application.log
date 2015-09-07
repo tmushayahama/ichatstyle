@@ -9514,3 +9514,1267 @@ Stack trace:
 REQUEST_URI=/ichatstyle/site/users
 HTTP_REFERER=http://localhost/ichatstyle/app/index.html
 ---
+2015/09/07 04:53:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 04:53:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 04:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 04:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 04:53:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 04:53:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 04:55:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 04:55:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 04:55:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:30:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:30:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:31:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:31:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:31:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:31:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:31:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:31:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:35:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:35:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:36:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:36:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:39:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:39:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:40:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:40:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:40:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:40:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:41:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:41:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:41:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:41:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:41:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:42:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:42:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:43:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:43:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:43:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:45:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:45:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:45:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:45:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:45:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:45:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:45:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:45:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:45:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:45:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:46:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:46:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:46:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:46:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:48:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:48:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:49:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:49:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:51:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:54:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:55:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:55:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:56:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:56:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 05:57:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 05:57:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 05:57:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:03:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:03:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:06:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:06:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:06:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:09:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:09:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:15:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:15:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:16:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:16:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:17:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:17:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:18:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:18:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:19:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:19:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:19:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:19:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:19:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:21:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:21:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:24:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:24:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:25:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:25:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
+2015/09/07 06:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/lib/jquery.min.map".' in C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('app/js/lib/jque...')
+#1 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ichatstyle/app/js/lib/jquery.min.map
+---
+2015/09/07 06:26:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=).
+in C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php (59)
+in C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php (24)
+in C:\xampp\htdocs\ichatstyle\index.php (13)
+2015/09/07 06:26:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM `ic_profile` `t` WHERE (not user_id=1) AND (not user_id=)' in C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_main\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_main\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\ichatstyle\protected\modules\user\models\Profile.php(59): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\ichatstyle\protected\controllers\SiteController.php(24): Profile::getPeople(true)
+#5 C:\xampp\htdocs\yii_main\framework\web\actions\CInlineAction.php(49): SiteController->actionUsers()
+#6 C:\xampp\htdocs\yii_main\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_main\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_main\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(282): CController->run('users')
+#10 C:\xampp\htdocs\yii_main\framework\web\CWebApplication.php(141): CWebApplication->runController('site/users')
+#11 C:\xampp\htdocs\yii_main\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\ichatstyle\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/ichatstyle/site/users
+HTTP_REFERER=http://localhost/ichatstyle/app/index.html
+---
