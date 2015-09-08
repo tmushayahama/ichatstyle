@@ -177,8 +177,7 @@ angular.module('myApp.view1', ['ngRoute'])
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
                self.acts.push({
-                description: value.action.action,
-                action_period: value.chatAction.action_period
+                description: value.action
                });
               });
               self.spitActions(true);
@@ -198,8 +197,7 @@ angular.module('myApp.view1', ['ngRoute'])
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
                self.acts.push({
-                description: value.action.action,
-                action_period: value.chatAction.action_period
+                description: value.action
                });
               });
               console.log("Actions", data["results"]);

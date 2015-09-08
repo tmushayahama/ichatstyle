@@ -18,7 +18,7 @@ id	action	action_type	privacy	status
 17	I will email you that later	1	1	1
 18	Less Confidence 	1	1	1
 19	Start being Shallow	1	1	1
-20	Thing I am Disorganised	1	1	1
+20	Think I am Disorganised	1	1	1
 21	Trust too much	1	1	1
 22	You don't know what a plane is.	1	1	1
 23	You Have Just Met	1	1	1

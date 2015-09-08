@@ -24,7 +24,7 @@ class Chat extends CActiveRecord {
 
  public static function getChats() {
   $chatCriteria = new CDbCriteria;
-  $chatCriteria->addCondition("status=" . 0);
+  $chatCriteria->addCondition("status=" . 1);
   return Chat::Model()->findAll($chatCriteria);
  }
 
