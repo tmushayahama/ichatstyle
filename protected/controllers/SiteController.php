@@ -90,7 +90,7 @@ class SiteController extends Controller {
 
   $newChat->creator_id = 1;
   $newChat->title = "temp 1";
-  $newChat->status = -1;
+  $newChat->status = 2;
 
   if ($newChat->save(false)) {
    if ($chatId) {
@@ -100,6 +100,7 @@ class SiteController extends Controller {
    $chatInvite->chat_id = $newChat->id;
    $chatInvite->codename = "pooo";
    $chatInvite->passcode = "poo2";
+   $newChat->status = -1;
    $chatInvite->save(false);
   }
 
@@ -108,17 +109,13 @@ class SiteController extends Controller {
   ));
  }
 
- public function actionIsReady($username, $password) {
-  $chatActions = ChatAction::getAllActions($chatId);
-  $actions = array();
-  foreach ($chatActions as $chatAction) {
-   array_push($actions, array(
-     "chatAction" => $chatAction,
-     "action" => $chatAction->action,
-   ));
-  }
+ public function actionIsReady() {
+  $chatId = Yii::app()->request->getParam('chat_id');
+  $codename = Yii::app()->request->getParam('codename');
+  $passcode = Yii::app()->request->getParam('passcode');
+
   echo CJSON::encode(array(
-    "results" => $actions,
+    "status" => ChatInvite::chatReady($chatId, $codename, $passcode),
   ));
  }
 

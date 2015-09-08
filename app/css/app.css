@@ -272,6 +272,16 @@ a.btn-link:hover {
  font-weight: bold;
 }
 
+
+.ic-display-cell-2 {
+ padding: 15px;
+ display:table-cell;
+	text-align: center;
+ vertical-align: middle;
+	font-size: 1.0em;
+ font-weight: bold;
+}
+
 #ic-navbar {
  margin-bottom: 0px;
  background-color: #FFF;

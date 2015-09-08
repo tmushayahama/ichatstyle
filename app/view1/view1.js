@@ -7,7 +7,7 @@ angular.module('myApp.view1', ['ngRoute'])
           });
          }])
 
-        .controller('View1Ctrl', ['$scope', "$http", function ($scope, $http) {
+        .controller('View1Ctrl', ['$scope', "$http", "chatFactory", function ($scope, $http, chatFactory) {
           var ImprovConv = function (id) {
            this.id = id;
            this.action = "";
@@ -16,7 +16,10 @@ angular.module('myApp.view1', ['ngRoute'])
            ];
            this.currentIndex = 0;
            this.currentAct = this.acts[this.currentIndex];
+
+           this.inviteChat;
           };
+
           ImprovConv.prototype.spitActions = function () {
            var self = this;
            var count = 0;
@@ -46,31 +49,37 @@ angular.module('myApp.view1', ['ngRoute'])
           ImprovConv.prototype.listenInvite = function (mode) {
            var self = this;
            var count = 0;
-           var isReady = function () {
-            self.currentIndex = count;
-            setTimeout(function () {
-             $http.post("../site/inviteChat", {}).success(function (data) {
-              self.acts = [];
-              angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action});
-              });
-              self.spitActions();
-              if (data.error) {
-               self.error = data.error;
-               return typeof error === 'function' && error(data);
-              }
-              typeof success === 'function' && success(data);
-             }).error(function (data) {
-              typeof error === 'function' && error(data);
-             });
+           var success = function (data) {
+            console.log("Status", data["status"])
+            if (data["status"] > 1) {
+
+             self.acts = [];
+
+             self.spitActions();
+             if (data.error) {
+              self.error = data.error;
+              return typeof error === 'function' && error(data);
+             }
+             typeof success === 'function' && success(data);
              $scope.$apply(function ()
              {
 
              });
-            });
+            }
+           }
+
+           var isReady = function () {
+            self.currentIndex = count;
+            var data = {
+             chat_id: self.inviteChat.chat_id,
+             codename: self.inviteChat.codename,
+             passcode: self.inviteChat.passcode,
+            };
+            chatFactory.ajaxPost("../site/isReady/", data, success);
+
             self.isReadyTimer = setTimeout(isReady, 5000);
             count++;
-           };
+           }
            isReady();
           };
 
@@ -81,6 +90,8 @@ angular.module('myApp.view1', ['ngRoute'])
              console.log("Im now inviting...");
              $http.post("../site/inviteChat", {}).success(function (data) {
               console.log("InviteChat", data["inviteChat"]);
+              self.inviteChat = data["inviteChat"];
+              self.listenInvite(1);
               if (data.error) {
                self.error = data.error;
                return typeof error === 'function' && error(data);
@@ -181,6 +192,7 @@ angular.module('myApp.view1', ['ngRoute'])
             {
              self.currentAct = self.acts[self.currentIndex];
              $scope.quickPlayWizardStep = "actions";
+             self.inviteChat = [];
             });
            });
           };

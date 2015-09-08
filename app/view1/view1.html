@@ -127,7 +127,17 @@
       </ul>
      </div>
      <div ng-switch-when="invite-wait" class="">
-      this is an invite
+      <div class="ic-display-table">
+       <div class="ic-display-cell-2">
+        <div class="ic-title">
+         WAITING FOR PLAYER ...
+        </div>
+        <div class="ic-description">
+         <strong>codename</strong>: {{improvConv.inviteChat.codename}}<br>
+         <strong>passcode</strong>: {{improvConv.inviteChat.passcode}}
+        </div>
+       </div>
+      </div>
      </div>
      <div ng-switch-when="play" class="ic-display-table">
       <div class="ic-display-cell">
