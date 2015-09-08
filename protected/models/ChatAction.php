@@ -62,6 +62,16 @@ class ChatAction extends CActiveRecord {
   }
  }
 
+ public static function setRandomActions($chatId) {
+  $actions = Action::getRandomActions();
+  foreach ($actions as $action) {
+   $chatAction = new ChatAction();
+   $chatAction->chat_id = $chatId;
+   $chatAction->action_id = $action->id;
+   $chatAction->save(false);
+  }
+ }
+
  /**
   * Returns the static model of the specified AR class.
   * @param string $className active record class name.

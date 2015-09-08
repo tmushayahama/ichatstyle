@@ -50,10 +50,16 @@ angular.module('myApp.view1', ['ngRoute'])
            var self = this;
            var count = 0;
            var success = function (data) {
-            console.log("Status", data["status"])
-            if (data["status"] > 0) {
-             console.log("Ready", data["status"])
+            console.log("Status", data["results"])
+            if (data["results"]) {
+             console.log("Ready", data["results"])
              self.currentIndex = 0;
+             self.acts = [];
+             angular.forEach(data["results"], function (value, key) {
+              self.acts.push({description: value.action.action});
+             });
+             console.log("Actions", data["results"]);
+
              setTimeout(function () {
               $scope.$apply(function ()
               {
@@ -61,6 +67,7 @@ angular.module('myApp.view1', ['ngRoute'])
                //self.currentAct = self.acts[self.currentIndex];
               });
              });
+             self.spitActions();
              clearTimeout(self.isReadyTimer);
             }
            }
@@ -80,17 +87,27 @@ angular.module('myApp.view1', ['ngRoute'])
           };
 
           ImprovConv.prototype.acceptInvitation = function () {
+           var self = this;
            var success = function (data) {
             console.log("Status", data["status"])
-            //if (data["status"] > 0) {
-            self.currentIndex = 0;
-            setTimeout(function () {
-             $scope.$apply(function ()
-             {
-              $scope.quickPlayWizardStep = "play";
+            if (data["error"]) {
+             $scope.improvConv.acceptInvitationData.error = data["error"];
+            } else {
+             $scope.improvConv.acceptInvitationData.error = '';
+             self.currentIndex = 0;
+             self.acts = [];
+             angular.forEach(data["results"], function (value, key) {
+              self.acts.push({description: value.action.action});
              });
-            });
-            // }
+             console.log("Actions", data["results"]);
+             setTimeout(function () {
+              $scope.$apply(function ()
+              {
+               $scope.quickPlayWizardStep = "play";
+              });
+             });
+             self.spitActions();
+            }
            };
            chatFactory.ajaxPost("../site/acceptInvitation/", $scope.improvConv.acceptInvitationData, success);
           };

@@ -95,6 +95,8 @@ class SiteController extends Controller {
   if ($newChat->save(false)) {
    if ($chatId) {
     ChatAction::copyActions($chatId, $newChat->id);
+   } else {
+    ChatAction::setRandomActions($newChat->id);
    }
    $chatInvite = new ChatInvite();
    $chatInvite->chat_id = $newChat->id;
@@ -113,19 +115,22 @@ class SiteController extends Controller {
   $chatId = Yii::app()->request->getParam('chat_id');
   $codename = Yii::app()->request->getParam('codename');
   // $passcode = Yii::app()->request->getParam('passcode');
-
-  echo CJSON::encode(array(
-    "status" => ChatInvite::chatReady($chatId, $codename),
-  ));
+  $chatInvite = ChatInvite::chatReady($chatId, $codename);
+  if ($chatInvite) {
+   $this->actionAllChatActions($chatId);
+  }
  }
 
  public function actionAcceptInvitation() {
   $codename = Yii::app()->request->getParam('codename');
-  //$passcode = Yii::app()->request->getParam('passcode');
-  echo CJSON::encode(array(
-    "codename" => $codename,
-    "status" => ChatInvite::acceptInvitation($codename),
-  ));
+  $chatInvite = ChatInvite::acceptInvitation($codename);
+  if ($chatInvite) {
+   $this->actionAllChatActions($chatInvite->chat_id);
+  } else {
+   echo CJSON::encode(array(
+     "error" => "Incorrect/Expired Code",
+   ));
+  }
  }
 
  public function actionNextAction() {
