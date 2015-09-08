@@ -23,13 +23,14 @@
 class Chat extends CActiveRecord {
 
  public static function getChats() {
-  $chatCiteria = new CDbCriteria;
-  return Chat::Model()->findAll($chatCiteria);
+  $chatCriteria = new CDbCriteria;
+  $chatCriteria->addCondition("status=" . 0);
+  return Chat::Model()->findAll($chatCriteria);
  }
 
  public static function getUsers() {
-  $userCiteria = new CDbCriteria;
-  return User::Model()->findAll($userCiteria);
+  $userCriteria = new CDbCriteria;
+  return User::Model()->findAll($userCriteria);
  }
 
  /**

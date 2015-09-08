@@ -60,6 +60,7 @@ class ChatAction extends CActiveRecord {
    $toChatAction = new ChatAction();
    $toChatAction->chat_id = $toChatId;
    $toChatAction->action_id = $fromChatAction->id;
+   $toChatAction->action_period = rand(6000, 15000);
    $toChatAction->save(false);
   }
  }
@@ -70,6 +71,7 @@ class ChatAction extends CActiveRecord {
    $chatAction = new ChatAction();
    $chatAction->chat_id = $chatId;
    $chatAction->action_id = $action->id;
+   $chatAction->action_period = rand(6000, 15000);
    $chatAction->save(false);
   }
  }

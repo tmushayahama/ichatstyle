@@ -18,14 +18,14 @@ class ChatInvite extends CActiveRecord {
  public static function chatReady($chatId, $codename) {
   $chatInviteCriteria = new CDbCriteria;
   $chatInviteCriteria->addCondition("chat_id='" . $chatId . "'");
-  $chatInviteCriteria->addCondition("codename='" . $codename . "'");
+  $chatInviteCriteria->addCondition("codename='" . trim($codename) . "'");
   $chatInviteCriteria->addCondition("status=" . 2);
   return ChatInvite::Model()->find($chatInviteCriteria);
  }
 
  public static function acceptInvitation($codename) {
   $chatInviteCriteria = new CDbCriteria;
-  $chatInviteCriteria->addCondition("codename='" . $codename . "'");
+  $chatInviteCriteria->addCondition("codename='" . trim($codename) . "'");
   //$chatInviteCriteria->addCondition("passcode='" . $passcode . "'");
 
   $chatInvite = ChatInvite::Model()->find($chatInviteCriteria);

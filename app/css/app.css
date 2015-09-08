@@ -265,6 +265,7 @@ a.btn-link:hover {
 .ic-accept-invitation-form  .ic-heading{
  font-size: 1.2em;
  text-align: center;
+ margin-bottom: 15px;
 }
 
 .ic-display-table {

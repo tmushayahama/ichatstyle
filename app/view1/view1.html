@@ -40,7 +40,7 @@
     <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
      <div ng-switch-when="actions">
       <div class="row">
-       <div class="col-lg-offset-2 col-lg-4">
+       <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-12">
         <div data-ng-click="selectAction(1)" class="ic-box-2">
          <div class="ic-title">
           RANDOM ACTIONS
@@ -50,7 +50,7 @@
          </div>
         </div>
        </div>
-       <div class="col-lg-4">
+       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
         <div data-ng-click="selectAction(2)" class="ic-box-2">
          <div class="ic-title">
           CHOOSE CHAT
@@ -66,13 +66,14 @@
         if you have a partner's invitation code and password, enter below
        </div>
        <div class="row">
-        <div class="form-group col-lg-offset-4 col-lg-4">
+        <div class="form-group col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-8">
          <input type="text"
                 ng-model='improvConv.acceptInvitationData.codename'
-                class="form-control col-lg-12"
+                class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
                 placeholder="Partner's Code">
         </div>
-        <button type="submit" ng-click='improvConv.acceptInvitation()' class="btn btn-default col-lg-2">Play</button>
+        <button type="submit" ng-click='improvConv.acceptInvitation()'
+                class="btn btn-primary col-lg-2 col-md-3 col-sm-4 col-xs-4">Accept</button>
        </div>
       </form>
      </div>

@@ -108,6 +108,10 @@ class SiteController extends Controller {
   $chatInvite = ChatInvite::chatReady($chatId, $codename);
   if ($chatInvite) {
    $this->getChatActions($chatId, false);
+  } else {
+   echo CJSON::encode(array(
+     "status" => -1,
+   ));
   }
  }
 

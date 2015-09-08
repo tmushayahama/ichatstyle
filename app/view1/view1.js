@@ -18,14 +18,22 @@ angular.module('myApp.view1', ['ngRoute'])
            this.currentAct = this.acts[this.currentIndex];
 
            this.inviteChat;
+
+           self.isReadyTimer;
           };
 
-          ImprovConv.prototype.spitActions = function () {
+          ImprovConv.prototype.spitActions = function (local) {
            var self = this;
+           console.log("Acts", self.acts);
            var count = 0;
            var spitAction = function () {
             if (count === 0) {
-             var rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+             var rand;
+             if (local) {
+              rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+             } else {
+              rand = 5000;
+             }
              self.quickPlayTimer = setTimeout(spitAction, rand);
             } else if (count < self.acts.length) {
              self.currentIndex = count;
@@ -35,7 +43,12 @@ angular.module('myApp.view1', ['ngRoute'])
                self.currentAct = self.acts[self.currentIndex];
               });
              });
-             var rand = Math.round(Math.random() * (10000 - 5000)) + 5000;
+             var rand;
+             if (local) {
+              rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+             } else {
+              rand = self.currentAct.action_period;
+             }
              console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
              var snd = new Audio("sound/sound1.wav");
              snd.play();
@@ -50,38 +63,36 @@ angular.module('myApp.view1', ['ngRoute'])
            var self = this;
            var count = 0;
            var success = function (data) {
-            console.log("Status", data["results"])
             if (data["results"]) {
+             clearTimeout(self.isReadyTimer);
              console.log("Ready", data["results"])
-             self.currentIndex = 0;
              self.acts = [];
              angular.forEach(data["results"], function (value, key) {
-              self.acts.push({description: value.action.action});
+              self.acts.push({
+               description: value.action.action,
+               action_period: value.chatAction.action_period
+              });
              });
-             console.log("Actions", data["results"]);
-
              setTimeout(function () {
               $scope.$apply(function ()
               {
                $scope.quickPlayWizardStep = "play";
-               //self.currentAct = self.acts[self.currentIndex];
               });
              });
-             self.spitActions();
-             clearTimeout(self.isReadyTimer);
+             self.spitActions(false);
+             return -1;
             }
-           }
+            self.isReadyTimer = setTimeout(isReady(), 1000);
+           };
 
            var isReady = function () {
-            self.currentIndex = count;
             var data = {
              chat_id: self.inviteChat.chat_id,
              codename: self.inviteChat.codename,
             };
+            clearTimeout(self.isReadyTimer);
             chatFactory.ajaxPost("../site/isReady/", data, success);
-
-            self.isReadyTimer = setTimeout(isReady, 5000);
-            count++;
+            //count++;
            }
            isReady();
           };
@@ -94,19 +105,20 @@ angular.module('myApp.view1', ['ngRoute'])
              $scope.improvConv.acceptInvitationData.error = data["error"];
             } else {
              $scope.improvConv.acceptInvitationData.error = '';
-             self.currentIndex = 0;
              self.acts = [];
              angular.forEach(data["results"], function (value, key) {
-              self.acts.push({description: value.action.action});
+              self.acts.push({
+               description: value.action.action,
+               action_period: value.chatAction.action_period
+              });
              });
-             console.log("Actions", data["results"]);
              setTimeout(function () {
               $scope.$apply(function ()
               {
                $scope.quickPlayWizardStep = "play";
               });
              });
-             self.spitActions();
+             self.spitActions(false);
             }
            };
            chatFactory.ajaxPost("../site/acceptInvitation/", $scope.improvConv.acceptInvitationData, success);
@@ -136,7 +148,10 @@ angular.module('myApp.view1', ['ngRoute'])
              $http.post("../site/allChatActions/chatId/" + chatId, {}).success(function (data) {
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action.action});
+               self.acts.push({
+                description: value.action.action,
+                action_period: value.chatAction.action_period
+               });
               });
               console.log("Actions", data["results"]);
               self.spitActions();
@@ -161,9 +176,12 @@ angular.module('myApp.view1', ['ngRoute'])
              $http.post("../site/allActions", {}).success(function (data) {
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action});
+               self.acts.push({
+                description: value.action.action,
+                action_period: value.chatAction.action_period
+               });
               });
-              self.spitActions();
+              self.spitActions(true);
               if (data.error) {
                self.error = data.error;
                return typeof error === 'function' && error(data);
@@ -179,10 +197,13 @@ angular.module('myApp.view1', ['ngRoute'])
              $http.post("../site/allChatActions/chatId/" + chatId, {}).success(function (data) {
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
-               self.acts.push({description: value.action.action});
+               self.acts.push({
+                description: value.action.action,
+                action_period: value.chatAction.action_period
+               });
               });
               console.log("Actions", data["results"]);
-              self.spitActions();
+              self.spitActions(true);
               if (data.error) {
                self.error = data.error;
                return typeof error === 'function' && error(data);
@@ -227,44 +248,6 @@ angular.module('myApp.view1', ['ngRoute'])
            });
           };
 
-          ImprovConv.prototype.start = function () {
-           console.log("I am being start");
-           var self = this;
-           var acts = [
-            {id: 0},
-            {description: ""}
-           ];
-           $http.post("../site/allActions", {}).success(function (data) {
-            angular.forEach(data["results"], function (value, key) {
-             acts.push({description: value["action"].action});
-            });
-            if (data.error) {
-             self.error = data.error;
-             return typeof error === 'function' && error(data);
-            }
-            typeof success === 'function' && success(data);
-           }).error(function (data) {
-            typeof error === 'function' && error(data);
-           });
-           var count = 0;
-           var spitAction = function () {
-            var display = $("#ic-display");
-            display.fadeIn("1000");
-            if (count === 0) {
-             var rand = Math.round(Math.random() * (12000 - 5000)) + 5000;
-             setTimeout(spitAction, rand);
-            } else if (count < acts.length) {
-             display.text(acts[count].Description);
-             var rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
-             console.log(rand);
-             var snd = new Audio("../sounds/sound1.wav");
-             snd.play();
-             setTimeout(spitAction, rand);
-            }
-            count++;
-           };
-           spitAction();
-          };
 
           $scope.getChats = function () {
            $scope.chats = [];
