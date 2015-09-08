@@ -41,10 +41,12 @@ class ChatAction extends CActiveRecord {
   return ChatAction::Model()->find($chatActionCriteria);
  }
 
- public static function getAllActions($chatId) {
+ public static function getAllActions($chatId, $rand) {
   $chatActionCriteria = new CDbCriteria;
   $chatActionCriteria->addCondition("chat_id=" . $chatId);
-  $chatActionCriteria->order = 'RAND()';
+  if ($rand) {
+   $chatActionCriteria->order = 'RAND()';
+  }
   $chatActionCriteria->limit = 6;
   return ChatAction::Model()->findAll($chatActionCriteria);
  }
