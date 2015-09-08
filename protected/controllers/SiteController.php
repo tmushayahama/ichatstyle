@@ -98,9 +98,9 @@ class SiteController extends Controller {
    }
    $chatInvite = new ChatInvite();
    $chatInvite->chat_id = $newChat->id;
-   $chatInvite->codename = "pooo";
-   $chatInvite->passcode = "poo2";
-   $newChat->status = -1;
+   $chatInvite->codename = $this->generateRandomString(8);
+   //$chatInvite->passcode =
+   $chatInvite->status = -1;
    $chatInvite->save(false);
   }
 
@@ -112,10 +112,19 @@ class SiteController extends Controller {
  public function actionIsReady() {
   $chatId = Yii::app()->request->getParam('chat_id');
   $codename = Yii::app()->request->getParam('codename');
-  $passcode = Yii::app()->request->getParam('passcode');
+  // $passcode = Yii::app()->request->getParam('passcode');
 
   echo CJSON::encode(array(
-    "status" => ChatInvite::chatReady($chatId, $codename, $passcode),
+    "status" => ChatInvite::chatReady($chatId, $codename),
+  ));
+ }
+
+ public function actionAcceptInvitation() {
+  $codename = Yii::app()->request->getParam('codename');
+  //$passcode = Yii::app()->request->getParam('passcode');
+  echo CJSON::encode(array(
+    "codename" => $codename,
+    "status" => ChatInvite::acceptInvitation($codename),
   ));
  }
 
@@ -125,6 +134,16 @@ class SiteController extends Controller {
     "chatAction" => $charAction,
     "action" => $charAction->action,
   ));
+ }
+
+ private function generateRandomString($length = 4) {
+  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  $charactersLength = strlen($characters);
+  $randomString = '';
+  for ($i = 0; $i < $length; $i++) {
+   $randomString .= $characters[rand(0, $charactersLength - 1)];
+  }
+  return $randomString;
  }
 
 }

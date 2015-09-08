@@ -26,6 +26,7 @@ angular.module('myApp', [
    type: "POST",
    data: data,
    dataType: "json",
+   headers: {'Content-Type': 'application/x-www-form-urlencoded'},
    success: success,
    error: error
   });

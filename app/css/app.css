@@ -258,6 +258,15 @@ a.btn-link:hover {
  font-size: 0.6em;
  color:#FF3333;
 }
+
+.ic-accept-invitation-form {
+ margin-top: 20px;
+}
+.ic-accept-invitation-form  .ic-heading{
+ font-size: 1.2em;
+ text-align: center;
+}
+
 .ic-display-table {
  display: table;
  height: 100%;

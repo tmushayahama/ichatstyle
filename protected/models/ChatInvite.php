@@ -15,12 +15,27 @@
  */
 class ChatInvite extends CActiveRecord {
 
- public static function chatReady($chatId, $codename, $passcode) {
+ public static function chatReady($chatId, $codename) {
   $chatInviteCriteria = new CDbCriteria;
   $chatInviteCriteria->addCondition("chat_id='" . $chatId . "'");
   $chatInviteCriteria->addCondition("codename='" . $codename . "'");
-  $chatInviteCriteria->addCondition("passcode='" . $passcode . "'");
+  //$chatInviteCriteria->addCondition("passcode='" . $passcode . "'");
   return ChatInvite::Model()->find($chatInviteCriteria)->status;
+ }
+
+ public static function acceptInvitation($codename) {
+  $chatInviteCriteria = new CDbCriteria;
+  $chatInviteCriteria->addCondition("codename='" . $codename . "'");
+  //$chatInviteCriteria->addCondition("passcode='" . $passcode . "'");
+
+  $chatInvite = ChatInvite::Model()->find($chatInviteCriteria);
+  if ($chatInvite) {
+   $chatInvite->status = 2;
+   if ($chatInvite->save(false)) {
+    return $chatInvite;
+   }
+  }
+  return null;
  }
 
  /**

@@ -51,20 +51,17 @@ angular.module('myApp.view1', ['ngRoute'])
            var count = 0;
            var success = function (data) {
             console.log("Status", data["status"])
-            if (data["status"] > 1) {
-
-             self.acts = [];
-
-             self.spitActions();
-             if (data.error) {
-              self.error = data.error;
-              return typeof error === 'function' && error(data);
-             }
-             typeof success === 'function' && success(data);
-             $scope.$apply(function ()
-             {
-
+            if (data["status"] > 0) {
+             console.log("Ready", data["status"])
+             self.currentIndex = 0;
+             setTimeout(function () {
+              $scope.$apply(function ()
+              {
+               $scope.quickPlayWizardStep = "play";
+               //self.currentAct = self.acts[self.currentIndex];
+              });
              });
+             clearTimeout(self.isReadyTimer);
             }
            }
 
@@ -73,7 +70,6 @@ angular.module('myApp.view1', ['ngRoute'])
             var data = {
              chat_id: self.inviteChat.chat_id,
              codename: self.inviteChat.codename,
-             passcode: self.inviteChat.passcode,
             };
             chatFactory.ajaxPost("../site/isReady/", data, success);
 
@@ -81,6 +77,22 @@ angular.module('myApp.view1', ['ngRoute'])
             count++;
            }
            isReady();
+          };
+
+          ImprovConv.prototype.acceptInvitation = function () {
+           var success = function (data) {
+            console.log("Status", data["status"])
+            //if (data["status"] > 0) {
+            self.currentIndex = 0;
+            setTimeout(function () {
+             $scope.$apply(function ()
+             {
+              $scope.quickPlayWizardStep = "play";
+             });
+            });
+            // }
+           };
+           chatFactory.ajaxPost("../site/acceptInvitation/", $scope.improvConv.acceptInvitationData, success);
           };
 
           ImprovConv.prototype.invitePlay = function (mode) {
@@ -170,6 +182,7 @@ angular.module('myApp.view1', ['ngRoute'])
           ImprovConv.prototype.restartQuickPlay = function () {
            var self = this;
            clearTimeout(self.quickPlayTimer);
+           clearTimeout(self.isReadyTimer);
            self.currentIndex = 0;
            setTimeout(function () {
             $scope.$apply(function ()
@@ -296,6 +309,7 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.chats = [];
           $scope.users = [];
           $scope.selectedChat = [];
+          $scope.acceptInvitationData;
 
           $scope.selectAction = function (actionType) {
            switch (actionType) {
