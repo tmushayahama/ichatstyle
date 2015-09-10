@@ -197,7 +197,8 @@ angular.module('myApp.view1', ['ngRoute'])
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
                self.acts.push({
-                description: value.action
+                description: value.action,
+                action_period: 4000
                });
               });
               console.log("Actions", data["results"]);
@@ -324,6 +325,7 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.selectChat = function (chatId) {
            $scope.quickPlayWizardStep = "start-type";
            $scope.selectedChat = $scope.chats.keys(chatId);
+           console.log("Chat ", $scope.selectedChat);
           };
 
           $scope.selectPlay = function (playType) {
@@ -344,8 +346,13 @@ angular.module('myApp.view1', ['ngRoute'])
              $scope.quickPlayWizardStep = "invite-play";
              $scope.improvConv.invitePlay(2);
              break;
+            case 4:
+             $scope.quickPlayWizardStep = "play";
+             $scope.improvConv.quickPlay(2, 1);
+             break;
            }
           };
+
 
           $scope.invitePlay = function (inviteType) {
            switch (inviteType) {
