@@ -197,7 +197,7 @@ angular.module('myApp.view1', ['ngRoute'])
               self.acts = [];
               angular.forEach(data["results"], function (value, key) {
                self.acts.push({
-                description: value.action,
+                description: value.action.action,
                 action_period: 4000
                });
               });
@@ -241,7 +241,7 @@ angular.module('myApp.view1', ['ngRoute'])
             $scope.$apply(function ()
             {
              self.currentAct = self.acts[self.currentIndex];
-             $scope.quickPlayWizardStep = "actions";
+             $scope.quickPlayWizardStep = "home";
              self.inviteChat = [];
             });
            });
@@ -304,7 +304,7 @@ angular.module('myApp.view1', ['ngRoute'])
           };
 
           $scope.improvConv = new ImprovConv(1);
-          $scope.quickPlayWizardStep = "actions";
+          $scope.quickPlayWizardStep = "home";
           $scope.chats = [];
           $scope.users = [];
           $scope.selectedChat = [];
@@ -324,7 +324,15 @@ angular.module('myApp.view1', ['ngRoute'])
 
           $scope.selectChat = function (chatId) {
            $scope.quickPlayWizardStep = "start-type";
-           $scope.selectedChat = $scope.chats.keys(chatId);
+           function filterByID(obj) {
+            if ('id' in obj && obj.id === chatId) {
+             return true;
+            } else {
+             return false;
+            }
+           }
+
+           $scope.selectedChat = $scope.chats.filter(filterByID)[0];
            console.log("Chat ", $scope.selectedChat);
           };
 
@@ -372,7 +380,7 @@ angular.module('myApp.view1', ['ngRoute'])
           };
 
           $scope.start = function () {
-           $scope.improvConv.start();
+           $scope.quickPlayWizardStep = "actions";
           };
 
           $scope.selectChatsWizard = function () {

@@ -1,39 +1,179 @@
 <div class="container">
- <div class="row ">
-  <div class="ic-heading-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-8 col-md-8 col-sm-10 col-xs-12">
-   <div class="ic-title">
-    Start a normal conversation except
+ <div id="ic-body" >
+  <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div ng-switch-when="home">
+    <div class="row">
+     <div class="ic-heading-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-8 col-md-8 col-sm-10 col-xs-12">
+      <div class="ic-title">
+       Start a normal conversation except
+      </div>
+      <div class="ic-description">
+       at random times a theme/subject will appear on the screen and then you have to act it out while continuing your conversation.
+      </div>
+      <div class="ic-extra-description">
+       You will hear a sound when a theme changes.
+      </div>
+     </div>
+    </div>
+    <div class="row ic-play-btn-row">
+     <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-1 col-lg-3 col-md-3 col-sm-4 col-xs-5">
+      <a ng-click="start()"
+         class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       Start
+      </a>
+     </div>
+     <div class=" col-lg-3 col-md-3 col-sm-4 col-xs-5">
+      <a ng-click="selectPlay(4)"
+         class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       Demo
+      </a>
+     </div>
+    </div>
    </div>
-   <div class="ic-description">
-    at random times a theme/subject will appear on the screen and then you have to act it out while continuing your conversation.
+   <div ng-switch-when="actions">
+    <div class="row">
+     <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-12">
+      <div data-ng-click="selectAction(1)" class="ic-box-2">
+       <div class="ic-title">
+        RANDOM ACTIONS
+       </div>
+       <div class="ic-description">
+        Using our algorithms, a random theme will appear from all out theme list.
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+      <div data-ng-click="selectAction(2)" class="ic-box-2">
+       <div class="ic-title">
+        CHOOSE CHAT
+       </div>
+       <div class="ic-description">
+        These are less random as they are categorized.
+       </div>
+      </div>
+     </div>
+    </div>
+    <form class="ic-accept-invitation-form row">
+     <div class="ic-heading">
+      if you have a partner's invitation code and password, enter below
+     </div>
+     <div class="row">
+      <div class="form-group col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-8">
+       <input type="text"
+              ng-model='improvConv.acceptInvitationData.codename'
+              class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
+              placeholder="Partner's Code">
+      </div>
+      <button type="submit" ng-click='improvConv.acceptInvitation()'
+              class="btn btn-primary col-lg-2 col-md-3 col-sm-4 col-xs-4">Accept</button>
+     </div>
+    </form>
    </div>
-   <div class="ic-extra-description">
-    You will hear a sound when a theme changes.
+   <div ng-switch-when="chats-selection">
+    <div class="row">
+     <div ng-repeat="chat in chats"
+          class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <div ng-click="selectChat(chat.id)" class="ic-box-1">
+       <div class="ic-title">
+        {{chat.value.title}}
+       </div>
+       <p class="ic-description">
+        {{chat.value.description}}
+       </p>
+      </div>
+     </div>
+    </div>
    </div>
-  </div>
+   <div ng-switch-when="start-type">
+    <div class="row">
+     <div class="col-lg-4">
+      <div data-ng-click="selectPlay(1)" class="ic-box-2">
+       <div class="ic-title">
+        QUICK START
+       </div>
+       <div class="ic-description">
+        It just on your screen
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4">
+      <div data-ng-click="invitePlay(1)" class="ic-box-2">
+       <div class="ic-title">
+        SYNC CODE
+       </div>
+       <div class="ic-description">
+
+       </div>
+      </div>
+     </div>
+     <div class="ic-disabled col-lg-4">
+      <div data-ng-click="selectPlay(3)" class="ic-box-2">
+       <div class="ic-title">
+        INVITE A PLAYER
+       </div>
+       <div class="ic-description">
+        Coming Soon
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div ng-switch-when="invite">
+    <ul class="list-group">
+     <li class="list-group-item">
+      <a class="btn btn-link" ng-click="waitPlay()">
+       {{"name: " + code.Name + " password: " + code.Password}}
+      </a>
+      <a class="btn btn-xs btn-primary pull-right"  ng-click="requestChat(user)">
+       Request
+      </a>
+     </li>
+     <li ng-repeat="user in users" class="list-group-item">
+      <a class="btn btn-link" ng-click="selectUser(user)">
+       {{user.firstname + " " + user.lastname}}
+      </a>
+      <a class="btn btn-xs btn-primary pull-right"
+         ng-click="requestChat(user)">
+       Request
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div ng-switch-when="invite-wait" class="">
+    <div class="ic-display-table">
+     <div class="ic-display-cell-2">
+      <div class="ic-title">
+       WAITING FOR PLAYER ...
+      </div>
+      <div class="ic-description">
+       <strong>codename</strong>: {{improvConv.inviteChat.codename}}<br>
+       <strong>passcode</strong>: {{improvConv.inviteChat.passcode}}
+      </div>
+     </div>
+    </div>
+   </div>
+   <div ng-switch-when="play" class="ic-display-table">
+    <div class="ic-display-cell">
+     {{improvConv.currentAct.description}}
+    </div>
+   </div>
+  </ng-switch>
  </div>
- <div class="row ic-play-btn-row">
-  <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-1 col-lg-3 col-md-3 col-sm-4 col-xs-5">
-   <a data-toggle="modal"
-      data-backdrop="static"
-      data-keyboard="false"
-      data-target="#quick-play"
-      class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    Start
-   </a>
-  </div>
-  <div class=" col-lg-3 col-md-3 col-sm-4 col-xs-5">
-   <a data-toggle="modal"
-      data-backdrop="static"
-      data-keyboard="false"
-      data-target="#quick-play"
-      ng-click="selectPlay(4)"
-      class="ic-play-btn btn col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    Demo
-   </a>
+ <div ng-show="quickPlayWizardStep !== 'home'" id="ic-footer" class="row">
+  <div class="btn-group col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-8">
+   <button type="button"
+           class="btn btn-danger btn-lg col-lg-12 col-md-12 col-sm-12 col-xs-12"
+           data-ng-click="improvConv.endQuickPlay()"
+           data-dismiss="modal">
+    Cancel
+   </button>
   </div>
  </div>
 </div>
+
+
+
+
 <div class="modal ic-modal-lg" id="quick-play">
  <div class="modal-dialog">
   <div class="modal-content">
@@ -47,141 +187,6 @@
     </div>
    </div>
    <div class="modal-body">
-    <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-     <div ng-switch-when="actions">
-      <div class="row">
-       <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-12">
-        <div data-ng-click="selectAction(1)" class="ic-box-2">
-         <div class="ic-title">
-          RANDOM ACTIONS
-         </div>
-         <div class="ic-description">
-          Using our algorithms, a random theme will appear from all out theme list.
-         </div>
-        </div>
-       </div>
-       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
-        <div data-ng-click="selectAction(2)" class="ic-box-2">
-         <div class="ic-title">
-          CHOOSE CHAT
-         </div>
-         <div class="ic-description">
-          These are less random as they are categorized.
-         </div>
-        </div>
-       </div>
-      </div>
-      <form class="ic-accept-invitation-form">
-       <div class="ic-heading">
-        if you have a partner's invitation code and password, enter below
-       </div>
-       <div class="row">
-        <div class="form-group col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-8">
-         <input type="text"
-                ng-model='improvConv.acceptInvitationData.codename'
-                class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                placeholder="Partner's Code">
-        </div>
-        <button type="submit" ng-click='improvConv.acceptInvitation()'
-                class="btn btn-primary col-lg-2 col-md-3 col-sm-4 col-xs-4">Accept</button>
-       </div>
-      </form>
-     </div>
-     <div ng-switch-when="chats-selection">
-      <div ng-repeat="chat in chats"
-           class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-       <div ng-click="selectChat(chat.id)" class="ic-box-1">
-        <div class="ic-title">
-         {{chat.value.title}}
-        </div>
-        <p class="ic-description">
-         {{chat.value.description}}
-        </p>
-       </div>
-      </div>
-     </div>
-     <div ng-switch-when="start-type">
-      <div class="col-lg-4">
-       <div data-ng-click="selectPlay(1)" class="ic-box-2">
-        <div class="ic-title">
-         QUICK START
-        </div>
-        <div class="ic-description">
-         It just on your screen
-        </div>
-       </div>
-      </div>
-      <div class="col-lg-4">
-       <div data-ng-click="invitePlay(1)" class="ic-box-2">
-        <div class="ic-title">
-         SYNC CODE
-        </div>
-        <div class="ic-description">
-
-        </div>
-       </div>
-      </div>
-      <div class="col-lg-4">
-       <div data-ng-click="selectPlay(3)" class="ic-box-2">
-        <div class="ic-title">
-         INVITE A PLAYER
-        </div>
-        <div class="ic-description">
-
-        </div>
-       </div>
-      </div>
-     </div>
-     <div ng-switch-when="invite">
-      <ul class="list-group">
-       <li class="list-group-item">
-        <a class="btn btn-link" ng-click="waitPlay()">
-         {{"name: " + code.Name + " password: " + code.Password}}
-        </a>
-        <a class="btn btn-xs btn-primary pull-right"  ng-click="requestChat(user)">
-         Request
-        </a>
-       </li>
-       <li ng-repeat="user in users" class="list-group-item">
-        <a class="btn btn-link" ng-click="selectUser(user)">
-         {{user.firstname + " " + user.lastname}}
-        </a>
-        <a class="btn btn-xs btn-primary pull-right"
-           ng-click="requestChat(user)">
-         Request
-        </a>
-       </li>
-      </ul>
-     </div>
-     <div ng-switch-when="invite-wait" class="">
-      <div class="ic-display-table">
-       <div class="ic-display-cell-2">
-        <div class="ic-title">
-         WAITING FOR PLAYER ...
-        </div>
-        <div class="ic-description">
-         <strong>codename</strong>: {{improvConv.inviteChat.codename}}<br>
-         <strong>passcode</strong>: {{improvConv.inviteChat.passcode}}
-        </div>
-       </div>
-      </div>
-     </div>
-     <div ng-switch-when="play" class="ic-display-table">
-      <div class="ic-display-cell">
-       {{improvConv.currentAct.description}}
-      </div>
-     </div>
-    </ng-switch>
-   </div>
-   <div class="modal-footer">
-    <div class="btn-group col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-8">
-     <button type="button"
-             class="btn btn-danger col-lg-12 col-md-12 col-sm-12 col-xs-12"
-             data-ng-click="improvConv.endQuickPlay()"
-             data-dismiss="modal">
-      Cancel
-     </button>
-    </div>
    </div>
   </div>
  </div>
