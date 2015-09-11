@@ -22,3 +22,4 @@ id	action	action_type	privacy	status
 21	Trust too much	1	1	1
 22	You don't know what a plane is.	1	1	1
 23	You Have Just Met	1	1	1
+24	Smell Bacon	1	1	1

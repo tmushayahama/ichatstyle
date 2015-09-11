@@ -458,6 +458,32 @@ a.btn-link:hover {
  }
  .ic-display-cell {
   padding: 5px;
-  font-size: 2.0em;
+  font-size: 4.0em;
+ }
+
+ .ic-heading-1 {
+  margin-top: 20px;
+ }
+ .ic-heading-1 .ic-title{
+  font-size: 1.3em;
+ }
+ .ic-heading-1 .ic-description{
+  font-size: 1.1em;
+ }
+ .ic-play-btn-row {
+  margin-top: 30px;
+  margin-bottom: 10px;
+ }
+
+ .ic-play-btn {
+  margin-bottom: 10px;
+  height: 60px;
+  font-size: 1.5em;
+  line-height: 40px;
+  border: #EEE solid 3px;
+ }
+
+ .ic-play-btn:hover {
+  border: #BBB solid 3px;
  }
 }

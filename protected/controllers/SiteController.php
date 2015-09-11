@@ -90,7 +90,7 @@ class SiteController extends Controller {
    }
    $chatInvite = new ChatInvite();
    $chatInvite->chat_id = $newChat->id;
-   $chatInvite->assignCode(1, 250);
+   $chatInvite->assignCode(4, 250);
    //$chatInvite->passcode =
    $chatInvite->status = -1;
    $chatInvite->save(false);

@@ -30,7 +30,7 @@ angular.module('myApp.view1', ['ngRoute'])
             if (count === 0) {
              var rand;
              if (local) {
-              rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+              rand = Math.round(Math.random() * (5000 - 3000)) + 3000;
              } else {
               rand = 5000;
              }
@@ -45,7 +45,7 @@ angular.module('myApp.view1', ['ngRoute'])
              });
              var rand;
              if (local) {
-              rand = Math.round(Math.random() * (6000 - 3000)) + 3000;
+              rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
              } else {
               rand = self.currentAct.action_period;
              }
