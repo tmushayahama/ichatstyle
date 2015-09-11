@@ -90,7 +90,7 @@ class SiteController extends Controller {
    }
    $chatInvite = new ChatInvite();
    $chatInvite->chat_id = $newChat->id;
-   $chatInvite->codename = $this->generateRandomString(8);
+   $chatInvite->assignCode(1, 250);
    //$chatInvite->passcode =
    $chatInvite->status = -1;
    $chatInvite->save(false);
@@ -133,16 +133,6 @@ class SiteController extends Controller {
     "chatAction" => $charAction,
     "action" => $charAction->action,
   ));
- }
-
- private function generateRandomString($length = 4) {
-  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  $charactersLength = strlen($characters);
-  $randomString = '';
-  for ($i = 0; $i < $length; $i++) {
-   $randomString .= $characters[rand(0, $charactersLength - 1)];
-  }
-  return $randomString;
  }
 
  private function getChatActions($chatId, $rand) {

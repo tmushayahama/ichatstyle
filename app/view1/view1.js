@@ -62,7 +62,12 @@ angular.module('myApp.view1', ['ngRoute'])
           ImprovConv.prototype.listenInvite = function (mode) {
            var self = this;
            var count = 0;
-           var success = function (data) {
+           var errorInvitation = function (data) {
+            console.log("an error");
+            self.isReadyTimer = setTimeout(isReady(), 1000);
+           }
+           var successInvitation = function (data) {
+            var poo = "p";
             if (data["results"]) {
              clearTimeout(self.isReadyTimer);
              console.log("Ready", data["results"])
@@ -90,8 +95,9 @@ angular.module('myApp.view1', ['ngRoute'])
              chat_id: self.inviteChat.chat_id,
              codename: self.inviteChat.codename,
             };
+            console.log("awake")
             clearTimeout(self.isReadyTimer);
-            chatFactory.ajaxPost("../site/isReady/", data, success);
+            chatFactory.ajaxPost("../site/isReady/", data, successInvitation, errorInvitation);
             //count++;
            }
            isReady();

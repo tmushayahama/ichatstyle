@@ -15,6 +15,37 @@
  */
 class ChatInvite extends CActiveRecord {
 
+ public function assignCode($length, $timeout) {
+  //$characters = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+
+  $count = 0;
+  do {
+   $codename = $this->generateRandomString($length);
+   $chatInviteCriteria = new CDbCriteria;
+   $chatInviteCriteria->addCondition("codename='" . $codename . "'");
+   $chatInviteCriteria->addCondition("status=" . -1);
+   $count++;
+   $chatInviteCount = ChatInvite::Model()->count($chatInviteCriteria);
+   //$codename .= '-' . $chatInviteCount . "-" . $count;
+  } while ($chatInviteCount > 0 && $count <= $timeout);
+
+  if ($count >= $timeout) {
+   $this->codename = uniqid();
+  } else {
+   $this->codename = $codename;
+  }
+ }
+
+ private function generateRandomString($length = 4) {
+  $characters = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+  $charactersLength = strlen($characters);
+  $randomString = '';
+  for ($i = 0; $i < $length; $i++) {
+   $randomString .= $characters[rand(0, $charactersLength - 1)];
+  }
+  return $randomString;
+ }
+
  public static function chatReady($chatId, $codename) {
   $chatInviteCriteria = new CDbCriteria;
   $chatInviteCriteria->addCondition("chat_id='" . $chatId . "'");
