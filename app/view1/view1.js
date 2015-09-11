@@ -102,9 +102,10 @@ angular.module('myApp.view1', ['ngRoute'])
            var success = function (data) {
             console.log("Status", data["status"])
             if (data["error"]) {
-             $scope.improvConv.acceptInvitationData.error = data["error"];
+             $scope.improvConv.acceptInvitationDataError = data["error"];
             } else {
-             $scope.improvConv.acceptInvitationData.error = '';
+             $("#partner-code-modal").modal("hide");
+             $scope.improvConv.acceptInvitationDataError = '';
              self.acts = [];
              angular.forEach(data["results"], function (value, key) {
               self.acts.push({
@@ -308,7 +309,8 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.chats = [];
           $scope.users = [];
           $scope.selectedChat = [];
-          $scope.acceptInvitationData;
+          $scope.acceptInvitationData = '';
+          $scope.acceptInvitationDataError = '';
 
           $scope.selectAction = function (actionType) {
            switch (actionType) {

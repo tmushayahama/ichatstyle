@@ -1,5 +1,6 @@
-<div class="container">
- <div id="ic-body" >
+
+<div id="ic-body" >
+ <div class="container">
   <ng-switch on="quickPlayWizardStep" class="ic-wizard-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
    <div ng-switch-when="home">
     <div class="row">
@@ -52,22 +53,22 @@
        </div>
       </div>
      </div>
-    </div>
-    <form class="ic-accept-invitation-form row">
-     <div class="ic-heading">
-      if you have a partner's invitation code and password, enter below
-     </div>
-     <div class="row">
-      <div class="form-group col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-8">
-       <input type="text"
-              ng-model='improvConv.acceptInvitationData.codename'
-              class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
-              placeholder="Partner's Code">
+     <div class='col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-8 col-md-10 col-sm-12 col-xs-12'>
+      <div data-toggle="modal"
+           data-backdrop="static"
+           data-keyboard="false"
+           data-target="#partner-code-modal"
+           ng-click="demoPlay"
+           class="ic-box-2">
+       <div class="ic-title">
+        I HAVE A CODE
+       </div>
+       <div class="ic-description">
+
+       </div>
       </div>
-      <button type="submit" ng-click='improvConv.acceptInvitation()'
-              class="btn btn-primary col-lg-2 col-md-3 col-sm-4 col-xs-4">Accept</button>
      </div>
-    </form>
+    </div>
    </div>
    <div ng-switch-when="chats-selection">
     <div class="row">
@@ -86,7 +87,7 @@
    </div>
    <div ng-switch-when="start-type">
     <div class="row">
-     <div class="col-lg-4">
+     <div class="col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-4 col-md-5 col-sm-6 col-xs-12">
       <div data-ng-click="selectPlay(1)" class="ic-box-2">
        <div class="ic-title">
         QUICK START
@@ -96,7 +97,7 @@
        </div>
       </div>
      </div>
-     <div class="col-lg-4">
+     <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
       <div data-ng-click="invitePlay(1)" class="ic-box-2">
        <div class="ic-title">
         SYNC CODE
@@ -106,7 +107,7 @@
        </div>
       </div>
      </div>
-     <div class="ic-disabled col-lg-4">
+     <div class="ic-disabled col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-lg-8 col-md-10 col-sm-12 col-xs-12">
       <div data-ng-click="selectPlay(3)" class="ic-box-2">
        <div class="ic-title">
         INVITE A PLAYER
@@ -122,7 +123,7 @@
     <ul class="list-group">
      <li class="list-group-item">
       <a class="btn btn-link" ng-click="waitPlay()">
-       {{"name: " + code.Name + " password: " + code.Password}}
+       {{"name: " + code.Name}}
       </a>
       <a class="btn btn-xs btn-primary pull-right"  ng-click="requestChat(user)">
        Request
@@ -147,34 +148,32 @@
       </div>
       <div class="ic-description">
        <strong>codename</strong>: {{improvConv.inviteChat.codename}}<br>
-       <strong>passcode</strong>: {{improvConv.inviteChat.passcode}}
       </div>
      </div>
     </div>
    </div>
-   <div ng-switch-when="play" class="ic-display-table">
+   <div ng-switch-when="play" class="ic-display-table ic-dim-3">
     <div class="ic-display-cell">
      {{improvConv.currentAct.description}}
     </div>
    </div>
   </ng-switch>
  </div>
- <div ng-show="quickPlayWizardStep !== 'home'" id="ic-footer" class="row">
-  <div class="btn-group col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-8">
-   <button type="button"
-           class="btn btn-danger btn-lg col-lg-12 col-md-12 col-sm-12 col-xs-12"
-           data-ng-click="improvConv.endQuickPlay()"
-           data-dismiss="modal">
-    Cancel
-   </button>
-  </div>
+</div>
+<div id="ic-footer" class="row">
+ <div ng-show="quickPlayWizardStep !== 'home'" class="btn-group col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-8">
+  <button type="button"
+          class="btn btn-danger btn-lg col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          data-ng-click="improvConv.endQuickPlay()">
+   Cancel
+  </button>
  </div>
 </div>
 
 
 
 
-<div class="modal ic-modal-lg" id="quick-play">
+<div class="modal" id="partner-code-modal">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -182,11 +181,35 @@
      <span aria-hidden="true">&times;</span>
      <span class="sr-only">close</span>
     </button>
+    <div ng-show="improvConv.acceptInvitationData.error.length > 0"  class="alert alert-warning">
+     {{improvConv.acceptInvitationData.error}}
+    </div>
     <div class="modal-title text-center">
-     PLAY
+     ENTER PARTNER'S CODE
     </div>
    </div>
    <div class="modal-body">
+    <form class="ic-accept-invitation-form row">
+     <div class="ic-heading">
+
+     </div>
+     <div class="row">
+      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <input type="text"
+              ng-model='improvConv.acceptInvitationData.codename'
+              class="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12"
+              placeholder="Partner's Code">
+      </div>
+     </div>
+    </form>
+   </div>
+   <div class="modal-footer">
+    <button type="submit" ng-click="improvConv.acceptInvitation()" class="btn btn-primary">
+     Accept
+    </button>
+    <button type="button" class="btn btn-defaul" data-dismiss="modal">
+     Cancel
+    </button>
    </div>
   </div>
  </div>

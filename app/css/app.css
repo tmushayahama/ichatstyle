@@ -6,11 +6,22 @@ body{
 }
 #ic-body {
  position: absolute;
- top: 60px;
+ overflow-y: auto;
+ top: 58px;
  right: 0px;
  bottom: 81px;
  left: 0px;
  color: #FFF;
+}
+
+#ic-body .container{
+ height: 100%;
+ width: 100%;
+}
+
+.ic-dim-3 {
+ background-color: #0F1215;
+ opacity: 0.9;
 }
 #ic-footer {
  padding-top: 20px;
@@ -315,7 +326,7 @@ a.btn-link:hover {
  display:table-cell;
 	text-align: center;
  vertical-align: middle;
-	font-size: 1.0em;
+	font-size: 3.0em;
  font-weight: bold;
 }
 
