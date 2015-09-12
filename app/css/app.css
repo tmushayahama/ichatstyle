@@ -23,6 +23,27 @@ body{
  background-color: #0F1215;
  opacity: 0.9;
 }
+
+.ic-intro-header-1 {
+ color: #FFF;
+ padding: 100px 0 0 0;
+}
+
+.ic-intro-header-1 .ic-title {
+ color: #FFF;
+ font-size: 2.0em;
+}
+.ic-intro-header-1 .ic-description {
+ color: #EEE;
+ font-size: 1.4em;
+}
+
+.ic-signup-box  {
+ padding: 25px 10px 25px 10px;
+ margin-bottom: 30px;
+ color: #FFF;
+}
+
 #ic-footer {
  padding-top: 20px;
  position: absolute;
@@ -455,6 +476,10 @@ a.btn-link:hover {
  #ic-navbar {
   width:100%;
   position:relative!important;
+ }
+
+ .ic-intro-header-1 {
+  padding-top: 20px;
  }
  .ic-display-cell {
   padding: 5px;

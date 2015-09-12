@@ -20,6 +20,10 @@ class SiteController extends Controller {
   );
  }
 
+ public function actionApp() {
+  $this->redirect('app');
+ }
+
  public function actionUsers() {
   $users = Profile::getPeople(true);
   echo CJSON::encode(array(

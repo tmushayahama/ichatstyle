@@ -1,5 +1,5 @@
 
-<div id="gb-registration-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="ic-registration-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -28,10 +28,10 @@
     <div class="form-group row">
      <?php echo $form->textField($registerModel, 'email', array('class' => 'form-control  col-lg-12 col-sm-12 col-md-12 col-xs-12', 'placeholder' => 'Email')); ?>
     </div>
-    <div class="gb-hide form-group row">
+    <div class="ic-hide form-group row">
      <?php echo $form->passwordField($registerModel, 'password', array('value' => 'temp', 'class' => 'form-control  col-lg-12 col-sm-12 col-md-12 col-xs-12', 'placeholder' => 'Password')); ?>
     </div>
-    <div class="gb-hide form-group row">
+    <div class="ic-hide form-group row">
      <?php echo $form->passwordField($registerModel, 'verifyPassword', array('value' => 'temp', 'class' => 'form-control  col-lg-12 col-sm-12 col-md-12 col-xs-12', 'placeholder' => 'Confirm Password')); ?>
     </div>
     <!-- <div class="control-group">
@@ -56,7 +56,7 @@
    <div class="modal-footer row">
     <div class="btn-group pull-right">
      <a type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</a>
-     <?php echo CHtml::submitButton(UserModule::t("Request"), array('class' => 'btn btn-primary gb-btn-register')); ?>
+     <?php echo CHtml::submitButton(UserModule::t("Request"), array('class' => 'btn btn-primary ic-btn-register')); ?>
     </div>
    </div>
    <?php $this->endWidget(); ?>

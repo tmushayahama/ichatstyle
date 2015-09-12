@@ -1,4 +1,4 @@
-<div id="gb-login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="ic-login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
  <div class="modal-dialog">
   <div class="modal-content">
    <div class="modal-header">
@@ -16,7 +16,7 @@
     <div class="form-group row">
      <?php echo CHtml::activePasswordField($loginModel, 'password', array('class' => 'form-control  col-lg-12 col-sm-12 col-md-12 col-xs-12', 'placeholder' => 'Password')) ?>
     </div>
-    <a href="#gb-registration-modal" role="button" data-toggle="modal" class="gb-hide">Register</a>
+    <a href="#ic-registration-modal" role="button" data-toggle="modal" class="ic-hide">Register</a>
     <?php //echo CHtml::link(UserModule::t("Lost Password?"), Yii::app()->getModule('user')->recoveryUrl); ?>
 
 
