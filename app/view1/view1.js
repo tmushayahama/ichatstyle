@@ -254,6 +254,20 @@ angular.module('myApp.view1', ['ngRoute'])
            });
           };
 
+          $scope.getLoggedInUser = function () {
+           $http.post("../site/loggedInUser", {}).success(function (data) {
+            if (data["user"]) {
+             $scope.user = data["user"];
+            }
+            if (data.error) {
+             self.error = data.error;
+             return typeof error === 'function' && error(data);
+            }
+            typeof success === 'function' && success(data);
+           }).error(function (data) {
+            typeof error === 'function' && error(data);
+           });
+          };
 
           $scope.getChats = function () {
            $scope.chats = [];
@@ -314,6 +328,7 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.quickPlayWizardStep = "home";
           $scope.chats = [];
           $scope.users = [];
+          $scope.user = [];
           $scope.selectedChat = [];
           $scope.acceptInvitationData = '';
           $scope.acceptInvitationDataError = '';
@@ -403,6 +418,8 @@ angular.module('myApp.view1', ['ngRoute'])
           $("body").on("click", "#ic-samplestart-btn", function (e) {
            $scope.improvConv.quickPlay();
           });
+
+          $scope.getLoggedInUser();
           $scope.getChats();
           $scope.getUsers();
          }]);

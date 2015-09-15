@@ -29,6 +29,12 @@ class Profile extends CActiveRecord {
   return Profile::model()->find($peopleCriteria);
  }
 
+ public static function getLoggedInUser() {
+  $peopleCriteria = new CDbCriteria();
+  $peopleCriteria->addCondition("user_id=" . Yii::app()->user->id);
+  return Profile::model()->find($peopleCriteria);
+ }
+
  public function getGenderOptions() {
   return array(
     1 => 'Male',

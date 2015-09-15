@@ -31,6 +31,19 @@ class SiteController extends Controller {
   ));
  }
 
+ public function actionLoggedInUser() {
+  $user = Profile::getLoggedInUser();
+  if ($user) {
+   echo CJSON::encode(array(
+     "user" => $user,
+   ));
+  } else {
+   echo CJSON::encode(array(
+     "error" => 1,
+   ));
+  }
+ }
+
  public function actionChats() {
   $chats = Chat::getChats();
   echo CJSON::encode(array(
