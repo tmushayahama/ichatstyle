@@ -89,7 +89,8 @@ class SiteController extends Controller {
  }
 
  public function actionAllChatActions($chatId) {
-  $this->getChatActions($chatId, true);
+  $isRandom = Yii::app()->request->getParam('random');
+  $this->getChatActions($chatId, $isRandom);
  }
 
  public function actionInviteChat($chatId = null) {

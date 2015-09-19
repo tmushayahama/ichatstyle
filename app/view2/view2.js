@@ -17,6 +17,7 @@ angular.module('myApp.view2', ['ngRoute'])
            this.acts = [
             {description: "Ready..."}
            ];
+           this.currentActions = [];
            this.currentIndex = 0;
            this.currentAct = this.acts[this.currentIndex];
 
@@ -57,6 +58,33 @@ angular.module('myApp.view2', ['ngRoute'])
            chatFactory.ajaxPost("../site/addChatAction/", data, success, error);
           }
 
+          ThemeAccount.prototype.getChatActions = function (chatId) {
+           var self = this;
+           var error = function (data) {
+           }
+           var success = function (data) {
+            var currentActions = [];
+
+            angular.forEach(data["results"], function (value, key) {
+             currentActions.push({
+              description: value.action.action,
+              action_period: value.chatAction.action_period
+             });
+            });
+            console.log("Current", self.currentActions)
+            setTimeout(function () {
+             $scope.$apply(function ()
+             {
+              self.currentActions = currentActions;
+             });
+            });
+           };
+           var data = {
+            random: false,
+            offset: 0
+           };
+           chatFactory.ajaxPost("../site/allChatActions/chatId/" + chatId, data, success, error);
+          }
 
 
           $scope.getLoggedInUser = function () {
@@ -130,7 +158,7 @@ angular.module('myApp.view2', ['ngRoute'])
           };
 
           $scope.themeAccount = new ThemeAccount(1);
-          $scope.quickPlayWizardStep = "home";
+          $scope.chatPageWizard = "chats";
           $scope.chats = [];
           $scope.users = [];
           $scope.user = [];
@@ -151,7 +179,7 @@ angular.module('myApp.view2', ['ngRoute'])
           };
 
           $scope.selectChat = function (chatId) {
-           $scope.quickPlayWizardStep = "start-type";
+           $scope.chatPageWizard = "chat";
            function filterByID(obj) {
             if ('id' in obj && obj.id === chatId) {
              return true;
@@ -161,6 +189,7 @@ angular.module('myApp.view2', ['ngRoute'])
            }
 
            $scope.selectedChat = $scope.chats.filter(filterByID)[0];
+           $scope.themeAccount.getChatActions($scope.selectedChat.id);
            console.log("Chat ", $scope.selectedChat);
           };
 

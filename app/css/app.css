@@ -1,4 +1,4 @@
-body{
+body {
  overflow-x: hidden;
 }
 
@@ -25,6 +25,12 @@ textarea {
 .ic-container {
  margin-top: 70px;
  padding-top: 50px;
+}
+
+.ic-container-play {
+ padding: 0;
+ height: 100%;
+ width: 100%;
 }
 
 .ic-dim-3 {
@@ -61,7 +67,7 @@ textarea {
  left: 0px;
  color: #FFF;
  overflow: hidden;
- background-color: #0F1215;
+ background-color: #24393B;
  opacity: 0.8;
 }
 
@@ -500,7 +506,8 @@ a.btn-link:hover {
 }
 
 .ic-wizard-content {
- padding: 10px;
+ margin: 0;
+ padding: 0px;
  height: 100%;
  overflow-y: auto;
  overflow-x: hidden;
