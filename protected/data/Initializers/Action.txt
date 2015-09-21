@@ -1,25 +1,43 @@
 id	action	action_type	privacy	status
-1	A bit Drunk	1	1	1
+1	A Bit Drunk	1	1	1
 2	Act Surprised	1	1	1
 3	Act Suspicious	1	1	1
 4	Annoying Mathmatician	1	1	1
 5	Annoyingly Philosophical	1	1	1
-6	Are you mad?	1	1	1
-7	Be nosy	1	1	1
-8	Be Overly Kind	1	1	1
-9	Be Overly Polite	1	1	1
-10	Be Calm	1	1	1
-11	Confuse a pilot with a driver	1	1	1
-12	Don't answer questions 	1	1	1
-13	Forget Each Others Names	1	1	1
-14	I don't get it	1	1	1
-15	I have a headache	1	1	1
-16	I shred all documents	1	1	1
-17	I will email you that later	1	1	1
-18	Less Confidence 	1	1	1
-19	Start being Shallow	1	1	1
-20	Think I am Disorganised	1	1	1
-21	Trust too much	1	1	1
-22	You don't know what a plane is.	1	1	1
-23	You Have Just Met	1	1	1
-24	Smell Bacon	1	1	1
+6	Are You Mad	1	1	1
+7	Be Calm	1	1	1
+8	Be Nosy	1	1	1
+9	Be Overly Kind	1	1	1
+10	Be Overly Polite	1	1	1
+11	Confuse A Pilot With A Driver	1	1	1
+12	Confuse Cute Dog With Cute Cat	1	1	1
+13	Confuse Valentine's With New Year's	1	1	1
+14	Did You Get My Message	1	1	1
+15	Did You Hear About Jane	1	1	1
+16	Dinner Is Ready	1	1	1
+17	Don't Answer Questions Directly	1	1	1
+18	Explain Your Skills	1	1	1
+19	Feeling Sleepy	1	1	1
+20	Forget Each Others Names	1	1	1
+21	Get The Door	1	1	1
+22	How was Australia	1	1	1
+23	I Don't Get It	1	1	1
+24	I Have A Headache	1	1	1
+25	I Shred All Documents	1	1	1
+26	I Will Email You That Later	1	1	1
+27	Less Confidence 	1	1	1
+28	Like My Facebook Photo	1	1	1
+29	Smell Bacon	1	1	1
+30	Start Being Shallow	1	1	1
+31	Think I Am Disorganised	1	1	1
+32	Today Is My Birthday	1	1	1
+33	Trust Too Much	1	1	1
+34	Uncle John Is Coming Tomorrow	1	1	1
+35	What Are You Cooking	1	1	1
+36	You don't know what a plane is.	1	1	1
+37	You Forgot To Get The Eggs	1	1	1
+38	You Just Met Me	1	1	1
+39	You Remember Uncle John	1	1	1
+40	What is Linkedin	1	1	1
+41	I Threw It Away	1	1	1
+42	Which Company Is This.	1	1	1

@@ -47,6 +47,7 @@ class ChatAction extends CActiveRecord {
   if ($rand) {
    $chatActionCriteria->order = 'RAND()';
   }
+  $chatActionCriteria->distinct = true;
   $chatActionCriteria->limit = 6;
   return ChatAction::Model()->findAll($chatActionCriteria);
  }

@@ -111,7 +111,7 @@ a.btn-link:hover {
 
 
 .ic-heading-1 {
- margin-top: 100px;
+ margin-top: 50px;
  text-align: center;
 }
 .ic-heading-1 .ic-title{
@@ -133,8 +133,8 @@ a.btn-link:hover {
  margin-right: auto;
 }
 .ic-play-btn-row {
-	margin-top: 50px;
- margin-bottom: 500px;
+	margin-top: 30px;
+ margin-bottom: 20px;
 }
 
 .ic-play-btn {
@@ -168,17 +168,18 @@ a.btn-link:hover {
 }
 
 .ic-box-1 {
+ margin-top: 20px;
  overflow: hidden;
  height: 100px;
  padding:10px;
  display: block;
  width: 100%;
- border: #EEE solid 5px;
+ border: #EEE solid 2px;
  color: #F2F2F2;
 }
 
 .ic-box-1:hover {
- border: #BBB solid 5px;
+ border: #BBB solid 2px;
  color: #CCC;
 }
 
@@ -255,10 +256,10 @@ a.btn-link:hover {
 }
 
 .ic-box-3 {
- overflow: hidden;
- margin-top: 20px;
- height: 80px;
+ margin: 0;
  padding:10px;
+ overflow: hidden;
+ height: 80px;
  display: block;
  width: 100%;
  border-bottom: #999 solid 1px;

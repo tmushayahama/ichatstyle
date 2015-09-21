@@ -24,6 +24,7 @@ angular.module('myApp.view2', ['ngRoute'])
            this.inviteChat;
 
            self.isReadyTimer;
+           3
           };
 
           $scope.addChatAction = function () {

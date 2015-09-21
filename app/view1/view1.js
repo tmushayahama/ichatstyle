@@ -12,16 +12,13 @@ angular.module('myApp.view1', ['ngRoute'])
            this.id = id;
            this.action = "";
            this.acts = [
-            {description: "Ready..."}
+            {description: "..."}
            ];
            this.currentIndex = 0;
            this.currentAct = this.acts[this.currentIndex];
-
            this.inviteChat;
-
            self.isReadyTimer;
           };
-
           ImprovConv.prototype.spitActions = function (local) {
            var self = this;
            console.log("Acts", self.acts);
@@ -50,7 +47,10 @@ angular.module('myApp.view1', ['ngRoute'])
               rand = self.currentAct.action_period;
              }
              console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
-             var snd = new Audio("sound/sound1.wav");
+             ///var snd = new Audio("sound/sound1.wav");
+             // snd.play();
+
+             var snd = $("#sound").get(0);
              snd.play();
              self.quickPlayTimer = setTimeout(spitAction, rand);
             }
@@ -58,7 +58,6 @@ angular.module('myApp.view1', ['ngRoute'])
            };
            spitAction();
           };
-
           ImprovConv.prototype.listenInvite = function (mode) {
            var self = this;
            var count = 0;
@@ -67,7 +66,6 @@ angular.module('myApp.view1', ['ngRoute'])
             self.isReadyTimer = setTimeout(isReady(), 1000);
            }
            var successInvitation = function (data) {
-            var poo = "p";
             if (data["results"]) {
              clearTimeout(self.isReadyTimer);
              console.log("Ready", data["results"])
@@ -89,20 +87,16 @@ angular.module('myApp.view1', ['ngRoute'])
             }
             self.isReadyTimer = setTimeout(isReady(), 1000);
            };
-
            var isReady = function () {
             var data = {
              chat_id: self.inviteChat.chat_id,
              codename: self.inviteChat.codename,
             };
-            console.log("awake")
             clearTimeout(self.isReadyTimer);
             chatFactory.ajaxPost("../site/isReady/", data, successInvitation, errorInvitation);
-            //count++;
            }
            isReady();
           };
-
           ImprovConv.prototype.acceptInvitation = function () {
            var self = this;
            var success = function (data) {
@@ -130,7 +124,6 @@ angular.module('myApp.view1', ['ngRoute'])
            };
            chatFactory.ajaxPost("../site/acceptInvitation/", $scope.improvConv.acceptInvitationData, success);
           };
-
           ImprovConv.prototype.invitePlay = function (mode) {
            var self = this;
            switch (mode) {
@@ -173,56 +166,38 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
-
-
           ImprovConv.prototype.quickPlay = function (mode, chatId) {
+           var self = this;
+           var data = {
+            random: true,
+            offset: 0
+           };
+           var success = function (data) {
+            var acts = [];
+            angular.forEach(data["results"], function (value, key) {
+             acts.push({
+              description: value.action.action,
+              action_period: value.chatAction.action_period
+             });
+            });
+            setTimeout(function () {
+             $scope.$apply(function ()
+             {
+              self.acts = acts;
+             });
+            });
+            self.spitActions(false);
+           }
+
            switch (mode) {
             case 1:
-             console.log("I am a quick play mode 1");
-             var self = this;
-             $http.post("../site/allActions", {}).success(function (data) {
-              self.acts = [];
-              angular.forEach(data["results"], function (value, key) {
-               self.acts.push({
-                description: value.action
-               });
-              });
-              self.spitActions(true);
-              if (data.error) {
-               self.error = data.error;
-               return typeof error === 'function' && error(data);
-              }
-              typeof success === 'function' && success(data);
-             }).error(function (data) {
-              typeof error === 'function' && error(data);
-             });
+             chatFactory.ajaxPost("../site/allChatActions/chatId/1", data, success);
              break;
             case 2:
-             console.log("I am a quick play mode 2");
-             var self = this;
-             $http.post("../site/allChatActions/chatId/" + chatId, {}).success(function (data) {
-              self.acts = [];
-              angular.forEach(data["results"], function (value, key) {
-               self.acts.push({
-                description: value.action.action,
-                action_period: 4000
-               });
-              });
-              console.log("Actions", data["results"]);
-              self.spitActions(true);
-              if (data.error) {
-               self.error = data.error;
-               return typeof error === 'function' && error(data);
-              }
-              typeof success === 'function' && success(data);
-             }).error(function (data) {
-              typeof error === 'function' && error(data);
-             });
+             chatFactory.ajaxPost("../site/allChatActions/chatId/" + chatId, data, success);
              break;
            }
-          };
-
-
+          }
           ImprovConv.prototype.restartQuickPlay = function () {
            var self = this;
            clearTimeout(self.quickPlayTimer);
@@ -236,7 +211,6 @@ angular.module('myApp.view1', ['ngRoute'])
            });
            self.spitActions();
           };
-
           ImprovConv.prototype.endQuickPlay = function () {
            var self = this;
            clearTimeout(self.quickPlayTimer);
@@ -253,7 +227,6 @@ angular.module('myApp.view1', ['ngRoute'])
             });
            });
           };
-
           $scope.getLoggedInUser = function () {
            $http.post("../site/loggedInUser", {}).success(function (data) {
             if (data["user"]) {
@@ -268,7 +241,6 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
           };
-
           $scope.getChats = function () {
            $scope.chats = [];
            $http.post("../site/chats", {}).success(function (data) {
@@ -285,7 +257,6 @@ angular.module('myApp.view1', ['ngRoute'])
             typeof error === 'function' && error(data);
            });
           };
-
           $scope.requestChat = function (user) {
            var data = {
             user_id: user.id,
@@ -302,7 +273,6 @@ angular.module('myApp.view1', ['ngRoute'])
            });
            $scope.users = users;
           };
-
           $scope.getUsers = function () {
            var users = [];
            $http.post("../site/users", {}).success(function (data) {
@@ -323,7 +293,6 @@ angular.module('myApp.view1', ['ngRoute'])
            });
            $scope.users = users;
           };
-
           $scope.improvConv = new ImprovConv(1);
           $scope.quickPlayWizardStep = "home";
           $scope.chats = [];
@@ -333,6 +302,9 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.acceptInvitationData = '';
           $scope.acceptInvitationDataError = '';
 
+          $scope.showDemo = function () {
+           $scope.quickPlayWizardStep = "demo";
+          }
           $scope.selectAction = function (actionType) {
            switch (actionType) {
             case 1:
@@ -344,7 +316,6 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
-
           $scope.selectChat = function (chatId) {
            $scope.quickPlayWizardStep = "start-type";
            function filterByID(obj) {
@@ -358,7 +329,6 @@ angular.module('myApp.view1', ['ngRoute'])
            $scope.selectedChat = $scope.chats.filter(filterByID)[0];
            console.log("Chat ", $scope.selectedChat);
           };
-
           $scope.selectPlay = function (playType) {
            switch (playType) {
             case 1:
@@ -383,8 +353,6 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
-
-
           $scope.invitePlay = function (inviteType) {
            switch (inviteType) {
             case 1:
@@ -393,32 +361,25 @@ angular.module('myApp.view1', ['ngRoute'])
              break;
            }
           };
-
           $scope.selectUser = function (index) {
            $scope.selectedUser = $scope.users[index];
           };
-
           $scope.quickPlay = function () {
            $scope.improvConv.quickPlay();
           };
-
           $scope.start = function () {
            $scope.quickPlayWizardStep = "actions";
           };
-
           $scope.selectChatsWizard = function () {
            $scope.quickPlayWizardStep = 1;
           };
-
           $scope.selectRandomPlay = function () {
            $scope.quickPlayWizardStep = 2;
            $scope.improvConv.quickPlay(0);
           };
-
           $("body").on("click", "#ic-samplestart-btn", function (e) {
            $scope.improvConv.quickPlay();
           });
-
           $scope.getLoggedInUser();
           $scope.getChats();
           $scope.getUsers();

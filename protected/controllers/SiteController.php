@@ -160,6 +160,7 @@ class SiteController extends Controller {
    array_push($actions, array(
      "chatAction" => $chatAction,
      "action" => $chatAction->action,
+     "rand" => $rand
    ));
   }
   echo CJSON::encode(array(
