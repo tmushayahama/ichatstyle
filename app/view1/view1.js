@@ -19,38 +19,30 @@ angular.module('myApp.view1', ['ngRoute'])
            this.inviteChat;
            self.isReadyTimer;
           };
-          ImprovConv.prototype.spitActions = function (local) {
+          ImprovConv.prototype.spitActions = function () {
            var self = this;
-           console.log("Acts", self.acts);
+           self.acts.push({
+            description: "...END",
+           })
            var count = 0;
            var spitAction = function () {
             if (count === 0) {
-             var rand;
-             if (local) {
-              rand = Math.round(Math.random() * (5000 - 3000)) + 3000;
-             } else {
-              rand = 5000;
-             }
+             var rand = Math.round(Math.random() * (5000 - 2000)) + 2000;
              self.quickPlayTimer = setTimeout(spitAction, rand);
             } else if (count < self.acts.length) {
              self.currentIndex = count;
              setTimeout(function () {
               $scope.$apply(function ()
               {
+               console.log("Acts", self.acts);
                self.currentAct = self.acts[self.currentIndex];
               });
              });
-             var rand;
-             if (local) {
-              rand = Math.round(Math.random() * (20000 - 10000)) + 10000;
-             } else {
-              rand = self.currentAct.action_period;
-             }
+             var rand = self.currentAct.action_period;
              console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
              ///var snd = new Audio("sound/sound1.wav");
              // snd.play();
-
-             var snd = $("#sound").get(0);
+             var snd = $("#ic-sound").get(0);
              snd.play();
              self.quickPlayTimer = setTimeout(spitAction, rand);
             }
@@ -82,7 +74,7 @@ angular.module('myApp.view1', ['ngRoute'])
                $scope.quickPlayWizardStep = "play";
               });
              });
-             self.spitActions(false);
+             self.spitActions();
              return -1;
             }
             self.isReadyTimer = setTimeout(isReady(), 1000);
@@ -119,7 +111,7 @@ angular.module('myApp.view1', ['ngRoute'])
                $scope.quickPlayWizardStep = "play";
               });
              });
-             self.spitActions(false);
+             self.spitActions();
             }
            };
            chatFactory.ajaxPost("../site/acceptInvitation/", $scope.improvConv.acceptInvitationData, success);
@@ -186,7 +178,7 @@ angular.module('myApp.view1', ['ngRoute'])
               self.acts = acts;
              });
             });
-            self.spitActions(false);
+            self.spitActions();
            }
 
            switch (mode) {
@@ -369,6 +361,10 @@ angular.module('myApp.view1', ['ngRoute'])
           };
           $scope.start = function () {
            $scope.quickPlayWizardStep = "actions";
+           //for mobile to init the sound
+           var snd = $("#ic-sound").get(0);
+           snd.play();
+           snd.pause();
           };
           $scope.selectChatsWizard = function () {
            $scope.quickPlayWizardStep = 1;
@@ -383,4 +379,10 @@ angular.module('myApp.view1', ['ngRoute'])
           $scope.getLoggedInUser();
           $scope.getChats();
           $scope.getUsers();
+
+
+          $("body").on("click", ".play-me", function () {
+           var snd = $("#ic-sound").get(0);
+           snd.play();
+          })
          }]);

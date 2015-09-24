@@ -56,9 +56,8 @@ class ChatInvite extends CActiveRecord {
 
  public static function acceptInvitation($codename) {
   $chatInviteCriteria = new CDbCriteria;
-  $chatInviteCriteria->addCondition("codename='" . trim($codename) . "'");
+  $chatInviteCriteria->addCondition("codename='" . trim(strtoupper($codename)) . "'");
   //$chatInviteCriteria->addCondition("passcode='" . $passcode . "'");
-
   $chatInvite = ChatInvite::Model()->find($chatInviteCriteria);
   if ($chatInvite) {
    $chatInvite->status = 2;
