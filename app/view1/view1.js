@@ -21,32 +21,30 @@ angular.module('myApp.view1', ['ngRoute'])
           };
           ImprovConv.prototype.spitActions = function () {
            var self = this;
-           self.acts.push({
-            description: "...END",
-           })
-           var count = 0;
+           var count = -1;
            var spitAction = function () {
-            if (count === 0) {
+            if (count === -1) {
              var rand = Math.round(Math.random() * (5000 - 2000)) + 2000;
              self.quickPlayTimer = setTimeout(spitAction, rand);
+             count++;
             } else if (count < self.acts.length) {
-             self.currentIndex = count;
              setTimeout(function () {
               $scope.$apply(function ()
               {
+               //self.currentIndex = count;
                console.log("Acts", self.acts);
-               self.currentAct = self.acts[self.currentIndex];
+               self.currentAct = self.acts[count];
+
+               var rand = self.currentAct.action_period;
+               console.log(rand, "  " + count + "  ", self.currentAct);
+               var snd = $("#ic-sound").get(0);
+               snd.play();
+               count++;
+               self.quickPlayTimer = setTimeout(spitAction, rand);
               });
              });
-             var rand = self.currentAct.action_period;
-             console.log(rand, "  " + self.currentIndex + "  ", self.currentAct);
-             ///var snd = new Audio("sound/sound1.wav");
-             // snd.play();
-             var snd = $("#ic-sound").get(0);
-             snd.play();
-             self.quickPlayTimer = setTimeout(spitAction, rand);
             }
-            count++;
+
            };
            spitAction();
           };
@@ -68,6 +66,10 @@ angular.module('myApp.view1', ['ngRoute'])
                action_period: value.chatAction.action_period
               });
              });
+             self.acts.push({
+              description: "...END",
+              action_period: 1
+             })
              setTimeout(function () {
               $scope.$apply(function ()
               {
@@ -105,6 +107,10 @@ angular.module('myApp.view1', ['ngRoute'])
                action_period: value.chatAction.action_period
               });
              });
+             self.acts.push({
+              description: "...END",
+              action_period: 1
+             })
              setTimeout(function () {
               $scope.$apply(function ()
               {
@@ -145,6 +151,10 @@ angular.module('myApp.view1', ['ngRoute'])
                 action_period: value.chatAction.action_period
                });
               });
+              self.acts.push({
+               description: "...END",
+               action_period: 1
+              })
               console.log("Actions", data["results"]);
               self.spitActions();
               if (data.error) {
@@ -172,13 +182,17 @@ angular.module('myApp.view1', ['ngRoute'])
               action_period: value.chatAction.action_period
              });
             });
+            acts.push({
+             description: "...END",
+             action_period: 1
+            })
             setTimeout(function () {
              $scope.$apply(function ()
              {
               self.acts = acts;
+              self.spitActions();
              });
             });
-            self.spitActions();
            }
 
            switch (mode) {

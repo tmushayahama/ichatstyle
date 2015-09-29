@@ -29,10 +29,17 @@
       <h5>An Example</h5>
       <br>
       <div class="embed-responsive embed-responsive-16by9">
-       <iframe class="embed-responsive-item"
-               src="https://www.youtube.com/embed/5WI6MHH7Y7I"
+       <iframe class="embed-responsive-item ic-hide"
+               src="../img/thumbnail_1.png"
                allowfullscreen>
        </iframe>
+       <div onclick="play();"
+            id="vidwrap"
+            class="embed-responsive-item"
+            style="background: black url('../app/img/thumbnail_1.png') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div>
+       <script type="text/javascript">function play() {
+           document.getElementById('vidwrap').innerHTML = '<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/zkESoUBVQDs?autoplay=1" frameborder="0"></iframe>';
+          }</script>
       </div>
      </div>
     </div>

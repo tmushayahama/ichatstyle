@@ -46,7 +46,7 @@ textarea {
 }
 
 .ic-dim-3 {
- background-color: #0F1215;
+ background-color: #110B09;
  opacity: 0.9;
 }
 
@@ -98,11 +98,24 @@ p {
 }
 a,
 a.btn-link {
- color: #0298AB;
+ color: #B38D82;
 }
 a:hover,
 a.btn-link:hover {
- color:#016875;
+ color:#98786E;
+}
+.input-lg {
+ border-radius: 0;
+ border: none;
+}
+.btn-primary {
+ background-color: #866A61;
+ border: #866A61 solid 1px;
+ border-radius: 0;
+}
+.btn-primary:hover {
+ background-color: #6B554E;
+ border: #6B554E solid 1px;
 }
 
 .ic-disabled {
@@ -379,7 +392,7 @@ a.btn-link:hover {
 
 .modal-header{
  padding:15px;
- border-bottom: #0298AB solid 4px;
+ border-bottom: #533431 solid 4px;
 }
 
 .modal-header button{
@@ -434,7 +447,7 @@ a.btn-link:hover {
 
 #ic-navbar {
  margin-bottom: 0px;
- background-color: #24393B;
+ background-color: #3E312D;
  font-family:arial,sans-serif;
  top:0;
  left:0;
@@ -442,11 +455,11 @@ a.btn-link:hover {
  width: 100%;
  height: 60px;
  filter: alpha(opacity=90);
- border-bottom: #0298AB solid 5px!important;
+ border-bottom: #866A61 solid 5px!important;
 }
 
 #ic-navbar-nav a {
- color: #0298AB;
+ color: #866A61;
  cursor: pointer!important;
 }
 .navbar-header {
@@ -457,7 +470,7 @@ a.btn-link:hover {
  text-decoration: none;
 }
 .navbar-header a strong {
- color:  #0298AB;
+ color: #A17F75;
 }
 .navbar-header .ic-logo {
  font-size: 1.6em;
