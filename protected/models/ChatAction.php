@@ -41,14 +41,16 @@ class ChatAction extends CActiveRecord {
   return ChatAction::Model()->find($chatActionCriteria);
  }
 
- public static function getAllActions($chatId, $rand) {
+ public static function getAllActions($chatId, $rand, $limit = null) {
   $chatActionCriteria = new CDbCriteria;
   $chatActionCriteria->addCondition("chat_id=" . $chatId);
   if ($rand) {
    $chatActionCriteria->order = 'RAND()';
   }
+  if ($limit) {
+   $chatActionCriteria->limit = $limit;
+  }
   $chatActionCriteria->distinct = true;
-  $chatActionCriteria->limit = 6;
   return ChatAction::Model()->findAll($chatActionCriteria);
  }
 
@@ -61,7 +63,7 @@ class ChatAction extends CActiveRecord {
    $toChatAction = new ChatAction();
    $toChatAction->chat_id = $toChatId;
    $toChatAction->action_id = $fromChatAction->id;
-   $toChatAction->action_period = rand(6000, 15000);
+   $toChatAction->action_period = rand(25000, 45000);
    $toChatAction->save(false);
   }
  }
@@ -72,7 +74,7 @@ class ChatAction extends CActiveRecord {
    $chatAction = new ChatAction();
    $chatAction->chat_id = $chatId;
    $chatAction->action_id = $action->id;
-   $chatAction->action_period = rand(6000, 15000);
+   $chatAction->action_period = rand(25000, 45000);
    $chatAction->save(false);
   }
  }

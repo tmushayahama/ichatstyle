@@ -20,7 +20,7 @@ textarea {
 #ic-body {
  background-image: url(../img/background_1.png);
  background-size: 100%;
- background-color: #24393B;
+ background-color: #544039;
  position: absolute;
  overflow-y: auto;
  top: 58px;
@@ -28,6 +28,23 @@ textarea {
  bottom: 0px;
  left: 0px;
  color: #FFF;
+}
+
+#ic-body-2 {
+ background-image: url(../img/background_2.png);
+ background-size: 100%;
+ background-color: #F2F2F2;
+ position: absolute;
+ overflow-y: auto;
+ top: 58px;
+ right: 0px;
+ bottom: 0px;
+ left: 0px;
+ color: #222;
+}
+
+#ic-body-2 .ic-description{
+ color: #444;
 }
 
 .ic-gutter-bottom{
@@ -51,7 +68,6 @@ textarea {
 }
 
 .ic-intro-header-1 {
- color: #FFF;
  padding: 100px 0 0 0;
 }
 
@@ -104,6 +120,9 @@ a:hover,
 a.btn-link:hover {
  color:#98786E;
 }
+.btn {
+ border-radius: 0;
+}
 .input-lg {
  border-radius: 0;
  border: none;
@@ -111,7 +130,6 @@ a.btn-link:hover {
 .btn-primary {
  background-color: #866A61;
  border: #866A61 solid 1px;
- border-radius: 0;
 }
 .btn-primary:hover {
  background-color: #6B554E;
@@ -284,13 +302,13 @@ a.btn-link:hover {
 }
 
 .ic-box-3 {
- margin: 0;
+ margin:20px 0 0 0;
  padding:10px;
  overflow: hidden;
  height: 80px;
  display: block;
  width: 100%;
- border-bottom: #999 solid 1px;
+ border: #AAA solid 3px;
 }
 
 .ic-box-3:hover {
@@ -455,7 +473,7 @@ a.btn-link:hover {
  width: 100%;
  height: 60px;
  filter: alpha(opacity=90);
- border-bottom: #866A61 solid 5px!important;
+ border-bottom: #816258 solid 5px!important;
 }
 
 #ic-navbar-nav a {

@@ -137,7 +137,7 @@ class SiteController extends Controller {
   $codename = Yii::app()->request->getParam('codename');
   $chatInvite = ChatInvite::acceptInvitation($codename);
   if ($chatInvite) {
-   $this->getChatActions($chatInvite->chat_id, false);
+   $this->getChatActions($chatInvite->chat_id, false, 6);
   } else {
    echo CJSON::encode(array(
      "error" => "Incorrect/Expired Code",
@@ -153,8 +153,8 @@ class SiteController extends Controller {
   ));
  }
 
- private function getChatActions($chatId, $rand) {
-  $chatActions = ChatAction::getAllActions($chatId, $rand);
+ private function getChatActions($chatId, $rand, $limit = null) {
+  $chatActions = ChatAction::getAllActions($chatId, $rand, $limit);
   $actions = array();
   foreach ($chatActions as $chatAction) {
    array_push($actions, array(
